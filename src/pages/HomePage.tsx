@@ -1,6 +1,5 @@
 import PageMeta from '../components/PageMeta'
 import Hero from '../components/Hero'
-import Ticker from '../components/Ticker'
 import Raves from '../components/Raves'
 import Press from '../components/Press'
 
@@ -13,7 +12,6 @@ export default function HomePage() {
         path="/"
       />
       <Hero />
-      <Ticker />
       <Press />
       <Raves />
     </>

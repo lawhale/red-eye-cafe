@@ -2,16 +2,17 @@ import { Link } from 'react-router-dom'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { heroRatings, photo } from '../data'
 import { Stars } from './ui'
+import Ticker from './Ticker'
 
 /* The real eye-chart sign in the cafe reads RED / EYE / CAFE / 94 WALNUT ST /
    MONTCLAIR NJ / FOOD COFFEE COMFORT, each line smaller than the last. */
 const CHART = [
-  { text: 'RED', size: 'text-[19vw] md:text-[10.5rem]', gap: '', accent: true },
-  { text: 'EYE', size: 'text-[15vw] md:text-[8.25rem]', gap: 'mt-1' },
-  { text: 'CAFE', size: 'text-[9vw] md:text-[5rem]', gap: 'mt-2' },
-  { text: '94 WALNUT ST', size: 'text-[4.4vw] md:text-[1.85rem]', gap: 'mt-4' },
-  { text: 'MONTCLAIR NJ', size: 'text-[3vw] md:text-[1.2rem]', gap: 'mt-3.5' },
-  { text: 'FOOD · COFFEE · COMFORT', size: 'text-[2.1vw] md:text-[0.8rem]', gap: 'mt-3.5' },
+  { text: 'RED', size: 'text-[16vw] md:text-[8rem]', gap: '', accent: true },
+  { text: 'EYE', size: 'text-[12.5vw] md:text-[6.25rem]', gap: 'mt-1' },
+  { text: 'CAFE', size: 'text-[7.5vw] md:text-[3.8rem]', gap: 'mt-2' },
+  { text: '94 WALNUT ST', size: 'text-[3.8vw] md:text-[1.5rem]', gap: 'mt-3' },
+  { text: 'MONTCLAIR NJ', size: 'text-[2.7vw] md:text-[1rem]', gap: 'mt-2.5' },
+  { text: 'FOOD · COFFEE · COMFORT', size: 'text-[1.9vw] md:text-[0.7rem]', gap: 'mt-2.5' },
 ]
 
 export default function Hero() {
@@ -20,25 +21,15 @@ export default function Hero() {
   const imgY = useTransform(scrollY, [0, 700], [0, reduce ? 0 : 90])
 
   return (
-    <section id="top" className="noise relative isolate overflow-hidden pb-14 pt-28 md:pb-20 md:pt-32">
-      {/* warm glow behind the type */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-40 top-10 -z-10 h-[34rem] w-[34rem] rounded-full bg-brick/20 blur-[130px]"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-24 bottom-0 -z-10 h-[26rem] w-[26rem] rounded-full bg-brass/10 blur-[120px]"
-      />
-
-      <div className="wrap grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+    <section id="top" className="noise relative isolate overflow-hidden pt-24 md:pt-28">
+      <div className="wrap grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
         {/* ------------------------------ eye chart ------------------------------ */}
         <div>
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.04] px-4 py-1.5 backdrop-blur"
+            className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.04] px-4 py-1.5 backdrop-blur"
           >
             <span className="relative flex h-1.5 w-1.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-70" />
@@ -49,7 +40,7 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          <div className="border-y-2 border-cream/15 py-6 pl-1 pr-4 md:py-8">
+          <div className="border-y-2 border-cream/15 py-5 pl-1 pr-4 md:py-6">
             {CHART.map((line, i) => (
               <motion.div
                 key={line.text}
@@ -79,7 +70,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.85, duration: 0.8 }}
-            className="mt-7 max-w-md text-balance text-[0.98rem] leading-relaxed text-cream/65"
+            className="mt-5 max-w-md text-balance text-[0.94rem] leading-relaxed text-cream/65"
           >
             Slinging great food and drinks on Walnut Street since 2012. Often imitated, never
             duplicated. Quality stuff at a good price, without all the fluff.
@@ -89,11 +80,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.95, duration: 0.7 }}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-6 flex flex-wrap items-center gap-3"
           >
             <Link
               to="/menu"
-              className="group inline-flex items-center gap-2.5 rounded-full bg-brick px-7 py-3.5 text-[0.8rem] font-500 uppercase tracking-[0.18em] text-cream shadow-xl shadow-brick/25 transition hover:bg-ember"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-brick px-7 py-3.5 text-[0.8rem] font-500 uppercase tracking-[0.18em] text-parchment shadow-xl shadow-brick/20 transition hover:bg-ember"
             >
               See the menu
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -134,7 +125,6 @@ export default function Hero() {
               // React 18 forwards this only in lowercase form.
               {...{ fetchpriority: 'high' }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-transparent to-transparent" />
           </div>
 
           {/* floating credential card */}
@@ -163,7 +153,7 @@ export default function Hero() {
       </div>
 
       {/* ------------------------------- rating rail ------------------------------ */}
-      <div className="wrap mt-20 md:mt-16">
+      <div className="wrap mt-16 md:mt-14">
         <div className="rule" />
         <div className="grid grid-cols-2 gap-x-6 gap-y-7 py-7 sm:grid-cols-4">
           {heroRatings.map((r, i) => (
@@ -204,6 +194,9 @@ export default function Hero() {
           </motion.div>
         </div>
         <div className="rule" />
+      </div>
+      <div className="mt-4 md:mt-5">
+        <Ticker />
       </div>
     </section>
   )

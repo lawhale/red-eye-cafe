@@ -47,7 +47,7 @@ export default function Nav() {
       >
         <nav className="wrap flex items-center justify-between gap-6" aria-label="Main">
           <NavLink to="/" className="group flex items-center gap-2.5" aria-label="Red Eye Cafe home">
-            <span className="grid h-8 w-8 place-items-center rounded-[6px] bg-brick font-display text-[15px] leading-none text-cream shadow-lg shadow-brick/25 transition-transform duration-300 group-hover:scale-105">
+            <span className="grid h-8 w-8 place-items-center rounded-[6px] bg-brick font-display text-[15px] leading-none text-parchment shadow-lg shadow-brick/20 transition-transform duration-300 group-hover:scale-105">
               R
             </span>
             <span className="font-display text-xl leading-none tracking-[0.14em] text-cream">
@@ -74,7 +74,7 @@ export default function Nav() {
             ))}
             <a
               href="tel:+19735093663"
-              className="ml-3 rounded-full bg-brick px-5 py-2.5 text-[0.78rem] font-500 uppercase tracking-[0.16em] text-cream shadow-lg shadow-brick/25 transition hover:bg-ember"
+              className="ml-3 rounded-full bg-brick px-5 py-2.5 text-[0.78rem] font-500 uppercase tracking-[0.16em] text-parchment shadow-lg shadow-brick/20 transition hover:bg-ember"
             >
               (973) 509‑3663
             </a>
@@ -137,7 +137,7 @@ export default function Nav() {
               ))}
               <a
                 href="tel:+19735093663"
-                className="mt-8 rounded-full bg-brick py-4 text-center font-500 uppercase tracking-[0.2em] text-cream"
+                className="mt-8 rounded-full bg-brick py-4 text-center font-500 uppercase tracking-[0.2em] text-parchment"
               >
                 Call (973) 509‑3663
               </a>

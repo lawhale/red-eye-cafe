@@ -188,7 +188,7 @@ export default function Vibe({ standalone = false }: { standalone?: boolean }) {
                     className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                   />
                   <span className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/25" />
-                  <span className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-ink/95 to-transparent p-3 text-left text-[0.66rem] uppercase tracking-[0.14em] text-cream/80 transition-transform duration-400 group-hover:translate-y-0">
+                  <span className="absolute inset-x-0 bottom-0 translate-y-full bg-black/70 p-3 text-left text-[0.66rem] uppercase tracking-[0.14em] text-white/85 transition-transform duration-400 group-hover:translate-y-0">
                     {p.subject}
                   </span>
                 </motion.button>

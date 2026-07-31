@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#16110f',
-        soot: '#241c19',
-        cream: '#f6efe4',
-        parchment: '#ece1cf',
-        brick: '#b8342a',
-        ember: '#d94b32',
-        brass: '#c99a4b',
-        sage: '#6f7d5f',
+        ink: '#f4eadb',
+        soot: '#e8d7c1',
+        cream: '#2b1b16',
+        parchment: '#fffaf2',
+        brick: '#a64332',
+        ember: '#c45f43',
+        brass: '#8b642d',
+        sage: '#627357',
       },
       fontFamily: {
         display: ['"Bebas Neue"', 'Impact', 'sans-serif'],

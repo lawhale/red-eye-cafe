@@ -31,7 +31,7 @@ export default function Raves() {
                   loading="lazy"
                   className="h-full w-full object-cover object-center transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-soot via-soot/20 to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-soot/90" />
+                <div className="absolute inset-0 bg-black/10" />
                 <div className="absolute left-5 top-5 rounded-full border border-cream/20 bg-ink/70 px-3 py-1 backdrop-blur">
                   <span className="text-[0.62rem] font-500 uppercase tracking-[0.2em] text-cream/80">
                     Most mentioned
@@ -96,16 +96,10 @@ export default function Raves() {
                     loading="lazy"
                     className="aspect-[16/10] w-full object-cover transition-transform duration-[1.1s] ease-out group-hover:scale-[1.05]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-soot via-soot/10 to-transparent" />
+                  <div className="absolute inset-0 bg-black/10" />
                 </div>
               ) : (
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-soot to-ink">
-                  <div className="absolute inset-0 grid place-items-center">
-                    <span className="font-display text-7xl leading-none text-cream/[0.06]">
-                      {rave.mentions}
-                    </span>
-                  </div>
-                </div>
+                <RavePlaceholder dish={rave.dish} />
               )}
 
               <div className="flex flex-1 flex-col p-5">
@@ -151,6 +145,66 @@ export default function Raves() {
 
       </div>
     </section>
+  )
+}
+
+function RavePlaceholder({ dish }: { dish: string }) {
+  const bacon = dish.toLowerCase().includes('bacon')
+
+  return (
+    <div
+      aria-hidden
+      className={`noise relative aspect-[16/10] w-full overflow-hidden ${
+        bacon ? 'bg-brick' : 'bg-sage'
+      }`}
+    >
+      <div className="absolute inset-0 flex flex-col justify-between p-5 text-parchment">
+        <div className="flex items-center justify-between text-[0.58rem] font-500 uppercase tracking-[0.24em]">
+          <span>Red Eye Cafe</span>
+          <span>Montclair · NJ</span>
+        </div>
+
+        <svg
+          className="absolute right-4 top-1/2 h-[72%] w-[52%] -translate-y-1/2 text-parchment/20"
+          viewBox="0 0 180 140"
+          fill="none"
+        >
+          {bacon ? (
+            <>
+              <path d="M42 18C70 36 24 53 52 72S35 108 61 125" stroke="currentColor" strokeWidth="15" strokeLinecap="round" />
+              <path d="M87 14c28 20-17 37 10 57s-15 38 11 55" stroke="currentColor" strokeWidth="15" strokeLinecap="round" />
+              <path d="M132 18c28 18-18 35 10 54s-16 37 10 53" stroke="currentColor" strokeWidth="15" strokeLinecap="round" />
+            </>
+          ) : (
+            <>
+              <path d="M35 64c5-28 27-44 55-44s50 16 55 44H35Z" stroke="currentColor" strokeWidth="9" />
+              <path d="M27 76h126M35 96h110M43 116h94" stroke="currentColor" strokeWidth="9" strokeLinecap="round" />
+            </>
+          )}
+        </svg>
+
+        <div className="relative max-w-[70%]">
+          <p className="font-display text-4xl leading-[0.88] tracking-wide sm:text-5xl">
+            {bacon ? (
+              <>
+                Candied
+                <br />
+                bacon
+              </>
+            ) : (
+              <>
+                Breakfast
+                <br />
+                burger
+              </>
+            )}
+          </p>
+          <p className="mt-3 text-[0.62rem] font-500 uppercase tracking-[0.2em] text-parchment/70">
+            House favorite
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }
 

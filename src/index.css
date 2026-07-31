@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   html {
@@ -18,7 +18,7 @@
   }
 
   ::selection {
-    @apply bg-brick text-cream;
+    @apply bg-brick text-parchment;
   }
 }
 
@@ -31,23 +31,23 @@
     @apply font-sans text-[0.68rem] font-500 uppercase tracking-[0.36em] text-brass;
   }
 
-  /* Layered paper texture used behind dark sections. */
+  /* A faint paper texture keeps the warm backgrounds tactile. */
   .noise::before {
     content: '';
     position: absolute;
     inset: 0;
     background-image: theme('backgroundImage.grain');
-    opacity: 0.035;
+    opacity: 0.018;
     pointer-events: none;
     mix-blend-mode: overlay;
   }
 
   .rule {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-brass/30 to-transparent;
+    @apply h-px w-full bg-brass/25;
   }
 
   .card {
-    @apply relative overflow-hidden rounded-2xl border border-cream/10 bg-soot/70 backdrop-blur-sm;
+    @apply relative overflow-hidden rounded-2xl border border-cream/10 bg-parchment/80;
   }
 }
 
