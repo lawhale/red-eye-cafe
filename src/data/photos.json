@@ -1,0 +1,781 @@
+{
+  "real": [
+    {
+      "id": "pancakes",
+      "localPath": "/images/pancakes.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606970.jpg",
+      "subject": "pancakes",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 96794
+    },
+    {
+      "id": "french-toast",
+      "localPath": "/images/french-toast.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606959.jpg",
+      "subject": "french toast",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 90897
+    },
+    {
+      "id": "latte-art",
+      "localPath": "/images/latte-art.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606960.jpg",
+      "subject": "coffee/latte",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 94751
+    },
+    {
+      "id": "espresso-pour",
+      "localPath": "/images/espresso-pour.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606969.jpg",
+      "subject": "coffee/espresso",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 101628
+    },
+    {
+      "id": "grilled-cheese-soup",
+      "localPath": "/images/grilled-cheese-soup.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606961.jpg",
+      "subject": "lunch/soup & sandwich",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 89497
+    },
+    {
+      "id": "smores",
+      "localPath": "/images/smores.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606962.jpg",
+      "subject": "s'mores",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 63138
+    },
+    {
+      "id": "smores-iced-coffee",
+      "localPath": "/images/smores-iced-coffee.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606963.jpg",
+      "subject": "s'mores + iced coffee",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 125422
+    },
+    {
+      "id": "pourover",
+      "localPath": "/images/pourover.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606964.jpg",
+      "subject": "coffee/pour-over",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 71186
+    },
+    {
+      "id": "counter-service",
+      "localPath": "/images/counter-service.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606965.jpg",
+      "subject": "interior/counter",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 111828
+    },
+    {
+      "id": "interior-books",
+      "localPath": "/images/interior-books.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606966.jpg",
+      "subject": "interior/books",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 108069
+    },
+    {
+      "id": "eyechart-cup",
+      "localPath": "/images/eyechart-cup.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606967.jpg",
+      "subject": "branding/eye-chart",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 79034
+    },
+    {
+      "id": "interior-counter",
+      "localPath": "/images/interior-counter.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606968.jpg",
+      "subject": "interior",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 104802
+    },
+    {
+      "id": "eyechart-cup-2",
+      "localPath": "/images/eyechart-cup-2.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606972.jpg",
+      "subject": "branding/eye-chart",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 87437
+    },
+    {
+      "id": "menu-board",
+      "localPath": "/images/menu-board.jpg",
+      "remoteUrl": "https://www.redeyenj.com/s/cc_images/cache_19606971.jpg",
+      "subject": "menu",
+      "credit": "Red Eye Cafe (official site)",
+      "sourcePage": "https://www.redeyenj.com/photo-gallery/",
+      "verified": true,
+      "bytes": 557184
+    },
+    {
+      "id": "storefront",
+      "localPath": "/images/storefront.jpg",
+      "remoteUrl": "https://cdn3.localdatacdn.com/nj/montclair/3520570/original/GwxCKEXCNY.jpg",
+      "subject": "exterior/storefront",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 353515
+    },
+    {
+      "id": "huevos-rancheros",
+      "localPath": "/images/huevos-rancheros.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/Rra7TuTVwx.jpg",
+      "subject": "huevos rancheros",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 304064
+    },
+    {
+      "id": "breakfast-sandwich",
+      "localPath": "/images/breakfast-sandwich.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/tNi5ep2xy8.jpg",
+      "subject": "breakfast sandwich",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 63488
+    },
+    {
+      "id": "pancakes-banana",
+      "localPath": "/images/pancakes-banana.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/MSTPjzqa0B.jpg",
+      "subject": "pancakes",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 428854
+    },
+    {
+      "id": "omelet",
+      "localPath": "/images/omelet.jpg",
+      "remoteUrl": "https://cdn6.localdatacdn.com/nj/montclair/3520570/original/4cD7lYjHn8.jpg",
+      "subject": "omelet/breakfast plate",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 178152
+    },
+    {
+      "id": "breakfast-plate",
+      "localPath": "/images/breakfast-plate.jpg",
+      "remoteUrl": "https://cdn4.localdatacdn.com/nj/montclair/3520570/original/4pFyeP2IQG.jpg",
+      "subject": "breakfast plate",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 146054
+    },
+    {
+      "id": "smores-cupcake",
+      "localPath": "/images/smores-cupcake.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/gGUh8jDsmz.jpg",
+      "subject": "s'mores",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 206088
+    },
+    {
+      "id": "sandwich-fries",
+      "localPath": "/images/sandwich-fries.jpg",
+      "remoteUrl": "https://cdn4.localdatacdn.com/nj/montclair/3520570/original/ARpn7AUtco.jpg",
+      "subject": "lunch sandwich",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 123884
+    },
+    {
+      "id": "curry-coconut-rice",
+      "localPath": "/images/curry-coconut-rice.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/5KdokBUVUe.jpg",
+      "subject": "lunch plate",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 283013
+    },
+    {
+      "id": "soup-bread",
+      "localPath": "/images/soup-bread.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/my8Nb9AfQb.jpg",
+      "subject": "soup",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 1470771
+    },
+    {
+      "id": "lunch-spread",
+      "localPath": "/images/lunch-spread.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/UHWNZMuulm.jpg",
+      "subject": "lunch spread",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 231687
+    },
+    {
+      "id": "pastry",
+      "localPath": "/images/pastry.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/QcRjTNMOhU.jpg",
+      "subject": "bakery/pastry",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 74916
+    },
+    {
+      "id": "interior-sign",
+      "localPath": "/images/interior-sign.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/rgsNApPUGe.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 88320
+    },
+    {
+      "id": "interior-sign-2",
+      "localPath": "/images/interior-sign-2.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/7OTwPWCnyF.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 85255
+    },
+    {
+      "id": "interior-bar",
+      "localPath": "/images/interior-bar.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/sgw4SqnWXw.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 2716424
+    },
+    {
+      "id": "interior-counter-2",
+      "localPath": "/images/interior-counter-2.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/kgoxFpRBtB.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 49711
+    },
+    {
+      "id": "interior-art",
+      "localPath": "/images/interior-art.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/ylYvqLxGF1.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 2713546
+    },
+    {
+      "id": "interior-octopus",
+      "localPath": "/images/interior-octopus.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/zIYc20eLTI.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 422192
+    },
+    {
+      "id": "interior-menu-boards",
+      "localPath": "/images/interior-menu-boards.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/W3KAwDqZc3.jpg",
+      "subject": "interior/menu",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 97183
+    },
+    {
+      "id": "interior-dining",
+      "localPath": "/images/interior-dining.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/kRWy8fV0NS.jpg",
+      "subject": "interior",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 329820
+    },
+    {
+      "id": "patio-string-lights",
+      "localPath": "/images/patio-string-lights.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/nicXFridqo.jpg",
+      "subject": "exterior/patio",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 367421
+    },
+    {
+      "id": "patio-alley",
+      "localPath": "/images/patio-alley.jpg",
+      "remoteUrl": "https://cdn7.localdatacdn.com/nj/montclair/3520570/original/FedVVwTd6c.jpg",
+      "subject": "exterior/patio",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 182316
+    },
+    {
+      "id": "patio-waffle-cappuccino",
+      "localPath": "/images/patio-waffle-cappuccino.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/AxK7HAUvQa.jpg",
+      "subject": "waffle + cappuccino",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 466650
+    },
+    {
+      "id": "patio-before-i-die-wall",
+      "localPath": "/images/patio-before-i-die-wall.jpg",
+      "remoteUrl": "https://cdn7.localdatacdn.com/nj/montclair/3520570/original/F5bhcj6xBR.jpg",
+      "subject": "exterior/patio",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 250663
+    },
+    {
+      "id": "eyechart-menu",
+      "localPath": "/images/eyechart-menu.jpg",
+      "remoteUrl": "https://cdn3.localdatacdn.com/nj/montclair/3520570/original/QIN9BXv99B.jpg",
+      "subject": "branding/eye-chart",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 165205
+    },
+    {
+      "id": "eyechart-cup-3",
+      "localPath": "/images/eyechart-cup-3.jpg",
+      "remoteUrl": "https://cdn6.localdatacdn.com/nj/montclair/3520570/original/jGSJJPtFxk.jpg",
+      "subject": "branding/eye-chart",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 619047
+    },
+    {
+      "id": "redeye-sign-tile",
+      "localPath": "/images/redeye-sign-tile.jpg",
+      "remoteUrl": "https://cdn6.localdatacdn.com/nj/montclair/3520570/original/nSOfPoqmVe.jpg",
+      "subject": "branding/signage",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 195266
+    },
+    {
+      "id": "redeye-sign-tile-2",
+      "localPath": "/images/redeye-sign-tile-2.jpg",
+      "remoteUrl": "https://cdn10.localdatacdn.com/nj/montclair/3520570/original/Yrles1T16D.jpg",
+      "subject": "branding/signage",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 355691
+    },
+    {
+      "id": "brand-chalkboard",
+      "localPath": "/images/brand-chalkboard.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/q8XQVXJerY.jpg",
+      "subject": "branding/chalkboard",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 62492
+    },
+    {
+      "id": "latte-art-2",
+      "localPath": "/images/latte-art-2.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/ToKjxH9sFS.jpg",
+      "subject": "coffee/latte",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 29566
+    },
+    {
+      "id": "espresso-cup",
+      "localPath": "/images/espresso-cup.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/qM0SjtfCQD.jpg",
+      "subject": "coffee/espresso",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 45350
+    },
+    {
+      "id": "espresso-machine",
+      "localPath": "/images/espresso-machine.jpg",
+      "remoteUrl": "https://cdn3.localdatacdn.com/nj/montclair/3520570/original/JS6K8D9Wrg.jpg",
+      "subject": "coffee/espresso bar",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 221442
+    },
+    {
+      "id": "iced-coffee",
+      "localPath": "/images/iced-coffee.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/a3ZPdc6Boe.jpg",
+      "subject": "coffee/iced",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 373001
+    },
+    {
+      "id": "intelligentsia-sign",
+      "localPath": "/images/intelligentsia-sign.jpg",
+      "remoteUrl": "https://cdn.localdatacdn.com/nj/montclair/3520570/original/XFnoaLuAW3.jpg",
+      "subject": "coffee/branding",
+      "credit": "Restaurantji user photo (Red Eye Cafe listing)",
+      "sourcePage": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/gallery/",
+      "verified": true,
+      "bytes": 31685
+    },
+    {
+      "id": "breakfast-eggs-hash",
+      "localPath": "/images/breakfast-eggs-hash.jpg",
+      "remoteUrl": "https://media-cdn.tripadvisor.com/media/photo-o/03/fb/82/f4/one-of-my-favorite-breakfasts.jpg",
+      "subject": "breakfast plate",
+      "credit": "Tripadvisor user photo",
+      "sourcePage": "https://www.tripadvisor.com/Restaurant_Review-g46637-d4283861-Reviews-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "verified": true,
+      "bytes": 406366
+    },
+    {
+      "id": "interior-pendant-lights",
+      "localPath": "/images/interior-pendant-lights.jpg",
+      "remoteUrl": "https://media-cdn.tripadvisor.com/media/photo-o/19/f6/8b/01/red-eye-cafe.jpg",
+      "subject": "interior",
+      "credit": "Tripadvisor user photo",
+      "sourcePage": "https://www.tripadvisor.com/Restaurant_Review-g46637-d4283861-Reviews-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "verified": true,
+      "bytes": 1305578
+    },
+    {
+      "id": "interior-bookshelf",
+      "localPath": "/images/interior-bookshelf.jpg",
+      "remoteUrl": "https://media-cdn.tripadvisor.com/media/photo-o/19/f6/8b/04/red-eye-cafe.jpg",
+      "subject": "interior/books",
+      "credit": "Tripadvisor user photo",
+      "sourcePage": "https://www.tripadvisor.com/Restaurant_Review-g46637-d4283861-Reviews-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "verified": true,
+      "bytes": 1503290
+    },
+    {
+      "id": "french-toast-2",
+      "localPath": "/images/french-toast-2.jpg",
+      "remoteUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/-y3xLbPuBqf4FL5_xZMnFA/o.jpg",
+      "subject": "french toast",
+      "credit": "Yelp user photo",
+      "sourcePage": "https://www.yelp.com/biz/red-eye-cafe-montclair",
+      "verified": true,
+      "bytes": 104348
+    },
+    {
+      "id": "eyechart-hero",
+      "localPath": "/images/eyechart-hero.jpg",
+      "remoteUrl": "https://mylocalnooks.com/wp-content/uploads/2025/10/red-eye-cafe-montclair-nj-feature.jpg",
+      "subject": "branding/eye-chart + drink",
+      "credit": "My Local Nooks",
+      "sourcePage": "https://mylocalnooks.com/new-jersey/sip-the-signature-new-orleans-sludge-coffee-at-this-montclair-fixture/",
+      "verified": true,
+      "bytes": 139376
+    }
+  ],
+  "stock": [
+    {
+      "id": "cafe-interior-stock",
+      "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=80",
+      "subject": "cozy cafe interior",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "cafe-interior-2-stock",
+      "url": "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1200&q=80",
+      "subject": "cozy cafe interior",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "cafe-interior-3-stock",
+      "url": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&q=80",
+      "subject": "cozy cafe interior",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "cafe-interior-4-stock",
+      "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+      "subject": "cafe interior",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "storefront-stock",
+      "url": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=1200&q=80",
+      "subject": "cafe storefront",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "storefront-2-stock",
+      "url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80",
+      "subject": "cafe storefront/signage",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "patio-stock",
+      "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80",
+      "subject": "outdoor cafe patio",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "pancakes-stock",
+      "url": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=1200&q=80",
+      "subject": "pancakes",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "pancakes-2-stock",
+      "url": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=1200&q=80",
+      "subject": "pancakes",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "pancakes-3-stock",
+      "url": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200&q=80",
+      "subject": "pancakes",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "french-toast-stock",
+      "url": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1200&q=80",
+      "subject": "french toast",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "waffle-stock",
+      "url": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=1200&q=80",
+      "subject": "waffles",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "crepes-stock",
+      "url": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=1200&q=80",
+      "subject": "crepes/waffle sandwich",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "breakfast-sandwich-stock",
+      "url": "https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=1200&q=80",
+      "subject": "breakfast sandwich",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "panini-stock",
+      "url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=1200&q=80",
+      "subject": "grilled sandwich",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "avocado-toast-stock",
+      "url": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=1200&q=80",
+      "subject": "avocado toast",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "avocado-toast-2-stock",
+      "url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1200&q=80",
+      "subject": "avocado toast",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "avocado-toast-3-stock",
+      "url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=1200&q=80",
+      "subject": "avocado toast",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "eggs-benedict-stock",
+      "url": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=1200&q=80",
+      "subject": "eggs benedict",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "breakfast-plate-stock",
+      "url": "https://images.unsplash.com/photo-1533920379810-6bedac961555?w=1200&q=80",
+      "subject": "breakfast plate",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "brunch-spread-stock",
+      "url": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=1200&q=80",
+      "subject": "brunch spread",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "breakfast-burger-stock",
+      "url": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80",
+      "subject": "burger",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "breakfast-burger-2-stock",
+      "url": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200&q=80",
+      "subject": "burger",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "burger-fries-stock",
+      "url": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=1200&q=80",
+      "subject": "burger + fries",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "tacos-stock",
+      "url": "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=1200&q=80",
+      "subject": "Mexican (chilaquiles/huevos stand-in)",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "tacos-2-stock",
+      "url": "https://images.unsplash.com/photo-1613514785940-daed07799d9b?w=1200&q=80",
+      "subject": "Mexican (chilaquiles/huevos stand-in)",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "smores-bars-stock",
+      "url": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=1200&q=80",
+      "subject": "s'mores dessert bars",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "latte-art-stock",
+      "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200&q=80",
+      "subject": "latte art",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "latte-art-2-stock",
+      "url": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=1200&q=80",
+      "subject": "latte art",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "latte-art-3-stock",
+      "url": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=1200&q=80",
+      "subject": "latte art",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "latte-hands-stock",
+      "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80",
+      "subject": "latte",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "espresso-stock",
+      "url": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=1200&q=80",
+      "subject": "espresso",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "iced-coffee-stock",
+      "url": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1200&q=80",
+      "subject": "iced coffee",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "pourover-stock",
+      "url": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80",
+      "subject": "pour-over coffee",
+      "credit": "Unsplash",
+      "verified": true
+    },
+    {
+      "id": "coffee-beans-stock",
+      "url": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200&q=80",
+      "subject": "coffee beans",
+      "credit": "Unsplash",
+      "verified": true
+    }
+  ]
+}

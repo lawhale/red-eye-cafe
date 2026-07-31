@@ -1,0 +1,250 @@
+{
+  "categories": [
+    {
+      "id": "breakfast-sandwiches",
+      "name": "Breakfast Sandwiches",
+      "blurb": "Eggs done right and tucked into a roll, a muffin, or even a waffle.",
+      "items": [
+        {"name": "Sweet Scramble", "desc": "Scrambled eggs, cheddar, onion jam & arugula on an English muffin", "price": "11.00", "tags": ["Vegetarian", "Popular"], "source": "official-pdf"},
+        {"name": "Pesto Broccoli", "desc": "Scrambled eggs with broccoli, smoked Gouda, pesto & sweet ketchup on a brioche roll", "price": "11.00", "tags": ["Vegetarian", "Popular"], "source": "official-pdf"},
+        {"name": "Highlander", "desc": "Scotch egg banh mi — two hard-boiled eggs wrapped in pork & shrimp sausage, deep fried, with pickled veggies, cilantro & sriracha mayo", "price": "13.00", "tags": [], "source": "official-pdf"},
+        {"name": "Waffle Sandwich", "desc": "Fried eggs and bacon on a waffle, served with spicy maple & a side of potato hash", "price": "12.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Elvis", "desc": "Banana, peanut butter & honey on multigrain. Add bacon +3", "price": "7.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "Frittata Sandwich", "desc": "Egg whites baked with onion and seasonal squash, with arugula and harissa on multigrain", "price": "11.00", "tags": [], "source": "official-pdf"},
+        {"name": "Breakfast Burger", "desc": "Angus beef burger, bacon jam, fried egg & smoked Gouda on an English muffin. Served with Maui onion chips. Sub Beyond burger (vegan) +3", "price": "14.00", "tags": [], "source": "official-pdf"},
+        {"name": "Custom Egg Sandwich", "desc": "Two eggs on your choice of bread with your choice of cheese, meat and veggies", "price": "7.00", "tags": ["Popular"], "source": "grubhub-derived"}
+      ]
+    },
+    {
+      "id": "breakfast-plates",
+      "name": "Breakfast Plates",
+      "blurb": "The full sit-down breakfast: skillets, bowls, omelets and everything in between.",
+      "items": [
+        {"name": "Granola Bowl", "desc": "Fresh fruit, Greek yogurt, granola & honey", "price": "8.50", "tags": ["Vegetarian", "Popular"], "source": "official-pdf"},
+        {"name": "Green Eggs & Ham", "desc": "Scrambled eggs with ham, kale, shallots & Gruyere. Served with potato hash and multigrain toast", "price": "13.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "House Omelet", "desc": "Breakfast sausage, shiitake, shallots, spinach & cheddar. Served with potato hash and multigrain toast", "price": "15.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Custom Omelet", "desc": "Any two fillings, served with potato hash and multigrain toast. Substitute egg whites +2, add shiitake or avocado +2, each additional filling +1", "price": "12.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Red Eye Classic", "desc": "Two eggs any style with toast & choice of potato hash or mixed greens. Add 2 strips bacon, turkey bacon or candied bacon, or 2 links breakfast sausage +4", "price": "10.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Sunrise Bowl", "desc": "Red rice, black beans, 2 fried eggs, queso fresco, avocado & pico de gallo. Add chorizo +2; add bacon, turkey bacon or chicken +3", "price": "14.00", "tags": [], "source": "official-pdf"},
+        {"name": "Avocado Toast", "desc": "Served on multigrain with pico de gallo, arugula & lemon vinaigrette. Add 2 eggs any style +6", "price": "10.00", "tags": ["Vegan"], "source": "official-pdf"},
+        {"name": "Breakfast Ramen", "desc": "Spicy ginger broth with noodles, spinach, bacon, hard-boiled egg & cilantro", "price": "15.00", "tags": [], "source": "official-pdf"},
+        {"name": "Red Eye Hash", "desc": "Chopped corned beef & potato hash topped with two fried eggs & red eye gravy", "price": "14.00", "tags": ["Gluten-Free"], "source": "official-pdf"},
+        {"name": "Huevos Rancheros", "desc": "Two fried eggs on house-made crispy corn tortillas with black beans, pork chorizo, mixed cheese & pico de gallo. Served with ranchero salsa & potato hash", "price": "14.00", "tags": ["Gluten-Free", "Popular"], "source": "official-pdf"},
+        {"name": "Sunrise Quesadilla", "desc": "Queso fresco and pork chorizo layered between corn tortillas, topped with two fried eggs & salsa verde", "price": "12.00", "tags": ["Gluten-Free"], "source": "official-pdf"},
+        {"name": "Chilaquiles", "desc": "House-made corn tortilla chips tossed with sauteed onion and salsa verde, topped with two fried eggs, queso fresco & avocado", "price": "12.00", "tags": ["Gluten-Free", "Popular"], "source": "official-pdf"},
+        {"name": "Shrimp & Grits", "desc": "Toasted coconut grits with pork chorizo, curry cream sauce, onion jam & cilantro", "price": "15.00", "tags": ["Gluten-Free"], "source": "official-pdf"}
+      ]
+    },
+    {
+      "id": "pancakes-waffles",
+      "name": "Pancakes, Waffles & French Toast",
+      "note": "On the printed menu these appear inside Breakfast Plates; grouped here for display. Single-serving portions are only listed on the delivery platforms.",
+      "blurb": "Griddle work: buttermilk stacks, challah French toast, and a waffle worth the wait.",
+      "items": [
+        {"name": "Buttermilk Pancakes – Plain", "desc": "Three per order, served with powdered sugar and syrup on the side. Pure maple syrup +1", "price": "10.00", "tags": ["Vegetarian", "Popular"], "source": "official-pdf"},
+        {"name": "Buttermilk Pancakes – Blueberry", "desc": "Blueberries baked into the pancakes, sprinkled with powdered sugar. Pure maple syrup +1", "price": "12.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "Buttermilk Pancakes – Chocolate Chip", "desc": "Chocolate chips baked into the pancakes, sprinkled with powdered sugar. Pure maple syrup +1", "price": "12.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "Buttermilk Pancakes – Banana Walnut", "desc": "Banana walnut topping made with syrup, poured over the pancakes. Pure maple syrup +1", "price": "12.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "Challah French Toast", "desc": "Served with sweet strawberries & powdered sugar. Pure maple syrup +1", "price": "12.00", "tags": ["Vegetarian", "Popular"], "source": "official-pdf"},
+        {"name": "Single Waffle", "desc": "One waffle on its own", "price": "8.50", "tags": [], "source": "grubhub-derived"},
+        {"name": "Single French Toast", "desc": "One slice of challah French toast", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Single Plain Pancake", "desc": "One buttermilk pancake topped with powdered sugar", "price": "4.50", "tags": ["Vegetarian"], "source": "grubhub-derived"},
+        {"name": "Single Blueberry Pancake", "desc": "One buttermilk pancake topped with powdered sugar", "price": "5.00", "tags": ["Vegetarian"], "source": "grubhub-derived"},
+        {"name": "Single Chocolate Chip Pancake", "desc": "One buttermilk pancake sprinkled with powdered sugar", "price": "5.00", "tags": ["Vegetarian"], "source": "grubhub-derived"},
+        {"name": "Single Banana Walnut Pancake", "desc": "One buttermilk pancake with banana walnut syrup topping", "price": "5.00", "tags": ["Vegetarian"], "source": "grubhub-derived"}
+      ]
+    },
+    {
+      "id": "soup-stuff",
+      "name": "Soup Stuff",
+      "blurb": "Bowls of comfort, including a soup-salad-sandwich combo that's still one of the best deals on Walnut Street.",
+      "items": [
+        {"name": "Soup / Salad / Sandwich", "desc": "Cup of soup, cheddar grilled cheese with onion jam on multigrain & mixed greens salad", "price": "10.00", "tags": [], "source": "official-pdf"},
+        {"name": "Cup of Soup", "desc": "8 oz. Daily selections — call for the soup of the day", "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "Bowl of Soup", "desc": "16 oz. Daily selections — call for the soup of the day", "price": "8.00", "tags": [], "source": "official-pdf"},
+        {"name": "Vegan Ramen", "desc": "Spicy ginger broth with noodles, shiitake, spinach & cilantro", "price": "12.00", "tags": ["Vegan"], "source": "official-pdf"},
+        {"name": "Harvest Turkey Chili", "desc": "Ground turkey, butternut squash, black beans & carrots. Topped with mixed cheese and served with toasted ciabatta", "price": "10.00", "tags": ["Popular"], "source": "official-pdf"}
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "blurb": "Greens with real construction behind them. Add grilled chicken, tuna salad or chicken salad +6, grilled salmon +10, shrimp +8.",
+      "items": [
+        {"name": "Roasted Shiitake", "desc": "Shiitake, toasted almonds, shaved Parmesan & sherry vinaigrette over kale. Add 2 eggs any style +6", "price": "12.00", "tags": ["Vegetarian", "Gluten-Free"], "source": "official-pdf"},
+        {"name": "Roasted Walnut", "desc": "Pear, goat cheese, candied walnuts & balsamic vinaigrette over arugula", "price": "12.00", "tags": ["Vegetarian", "Gluten-Free"], "source": "official-pdf"},
+        {"name": "Mediterranean", "desc": "Artichoke, Kalamata olives, shaved Parmesan & lemon vinaigrette over mixed greens", "price": "12.00", "tags": ["Vegetarian", "Gluten-Free"], "source": "official-pdf"},
+        {"name": "Farm Fresh", "desc": "Avocado, bacon, tomato, hard-boiled egg & lemon vinaigrette over mixed greens", "price": "12.00", "tags": ["Gluten-Free"], "source": "official-pdf"},
+        {"name": "House", "desc": "Carrots, cucumber, tomato & balsamic vinaigrette over mixed greens", "price": "9.00", "tags": ["Vegetarian", "Gluten-Free"], "source": "official-pdf"}
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "Sides",
+      "blurb": "Add-ons and small plates, from candied bacon to coconut grits.",
+      "items": [
+        {"name": "Bacon", "desc": "Three strips of thick-cut, applewood-smoked pork bacon", "price": "7.50", "tags": [], "source": "official-pdf"},
+        {"name": "Turkey Bacon", "desc": "Three strips per order", "price": "7.50", "tags": [], "source": "official-pdf"},
+        {"name": "Candied Bacon", "desc": "Thick-cut bacon coated in brown sugar", "price": "8.50", "tags": [], "source": "official-pdf"},
+        {"name": "Breakfast Sausage", "desc": "Two links per serving", "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "Toast", "desc": "Two slices, buttered. Multigrain, rye, or white", "price": "3.00", "tags": [], "source": "official-pdf"},
+        {"name": "Potato Hash", "desc": "Cubed, roasted red potatoes with red pepper & onion", "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "2 Eggs", "desc": "Any style", "price": "6.00", "tags": [], "source": "official-pdf"},
+        {"name": "1 Egg", "desc": "Any style", "price": "3.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Fresh Fruit", "desc": "Melon, pineapple, banana and strawberries. Varies by availability", "price": "6.00", "tags": [], "source": "official-pdf"},
+        {"name": "Roasted Sweet Potato Mash", "desc": null, "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "Fries", "desc": null, "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "Chips", "desc": "Maui onion", "price": "3.00", "tags": [], "source": "official-pdf"},
+        {"name": "Side Salad", "desc": "Mixed greens, shredded carrot, tomato & balsamic vinaigrette", "price": "5.00", "tags": [], "source": "official-pdf"},
+        {"name": "Avocado", "desc": null, "price": "2.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Black Beans", "desc": null, "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Grits", "desc": "Coconut grits", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Red Rice", "desc": "Red rice made with fresh tomato & chicken broth", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Maduros", "desc": "Fried sweet plantains", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Hummus", "desc": "House-made", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Chorizo", "desc": "Ground pork chorizo", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Corned Beef Hash", "desc": "Chopped corned beef & potato hash", "price": "7.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Grilled Chicken", "desc": null, "price": "6.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Tarragon Chicken Salad", "desc": null, "price": "6.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Tuna Salad", "desc": null, "price": "6.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Shrimp", "desc": null, "price": "8.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Salmon", "desc": null, "price": "10.00", "tags": [], "source": "grubhub-derived"}
+      ]
+    },
+    {
+      "id": "lunch-sandwiches-plates",
+      "name": "Lunch Sandwiches & Plates",
+      "blurb": "Midday heavy hitters on ciabatta, multigrain and brioche.",
+      "items": [
+        {"name": "Turkey Pear", "desc": "Turkey, pear, Brie, avocado, arugula & herb mayo on multigrain", "price": "12.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Salmon BLT", "desc": "Grilled salmon, bacon, tomato, avocado, herb mayo & arugula on ciabatta", "price": "16.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Classic Chicken", "desc": "Grilled chicken, roasted peppers, mozzarella, pesto & tomato on ciabatta", "price": "10.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Grilled Chicken", "desc": "Grilled chicken, roasted sweet potato, spinach, mayo & harissa on ciabatta", "price": "10.00", "tags": [], "source": "official-pdf"},
+        {"name": "Maduros Chicken", "desc": "Grilled chicken, sweet plantains, bacon, avocado, arugula & chimichurri on ciabatta", "price": "14.00", "tags": [], "source": "official-pdf"},
+        {"name": "Ham & Gouda", "desc": "Ham, smoked Gouda, artichoke, garlic mustard & arugula on ciabatta", "price": "10.00", "tags": [], "source": "official-pdf"},
+        {"name": "Cuban", "desc": "Roasted pork loin with ham, Gruyere, pickles & garlic mustard on ciabatta", "price": "12.00", "tags": [], "source": "official-pdf"},
+        {"name": "Grilled Cheese", "desc": "Cheddar on multigrain", "price": "6.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "BLT", "desc": "Bacon, mixed greens, tomato & mayo on multigrain", "price": "9.00", "tags": [], "source": "official-pdf"},
+        {"name": "Green Goddess BLT", "desc": "Turkey bacon, mozzarella, tomato, red onion, avocado, fresh basil and pesto on ciabatta", "price": "12.00", "tags": [], "source": "official-pdf"},
+        {"name": "Tarragon Chicken", "desc": "White meat chicken salad & tomato on cranberry pecan", "price": "10.00", "tags": ["Popular"], "source": "official-pdf"},
+        {"name": "Tuna", "desc": "Tuna salad with shredded carrot, cucumber, red onion & mayo on multigrain", "price": "10.00", "tags": [], "source": "official-pdf"},
+        {"name": "Hummus & Hot Sauce", "desc": "House-made hummus with cucumber, shredded carrot, roasted peppers & hot sauce on multigrain", "price": "8.00", "tags": ["Vegan"], "source": "official-pdf"},
+        {"name": "Orchard", "desc": "Pear, avocado, goat cheese, tomato, pesto, arugula & lemon vinaigrette on multigrain", "price": "10.00", "tags": ["Vegetarian"], "source": "official-pdf"},
+        {"name": "Avo Burger", "desc": "Angus beef, avocado, cheddar, red onion, arugula & chipotle mayo on brioche. Served with Maui onion chips. Sub Beyond burger (vegan) +3", "price": "12.00", "tags": [], "source": "official-pdf"},
+        {"name": "Cheeseburger", "desc": "Angus beef with American cheese on brioche. Served with Maui onion chips. Sub Beyond burger (vegan) +3", "price": "10.00", "tags": [], "source": "official-pdf"}
+      ]
+    },
+    {
+      "id": "coffee-and-beverages",
+      "name": "Coffee and Beverages",
+      "blurb": "Kobrick's coffee, house cold brew, and the cold case — get lifted.",
+      "items": [
+        {"name": "Drip Coffee", "desc": "Kobrick's Kiss of Africa medium/dark roast. 12 / 16 / 20 oz — 2.34 / 2.81 / 3.29", "price": "2.34", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Drip Coffee", "desc": "Kobrick's Kiss of Africa medium/dark roast, served over ice", "price": "2.81", "tags": ["Popular"], "source": "grubhub-derived"},
+        {"name": "Sludge Cold Brew", "desc": "Kobrick's Tiger Stripe Reserve espresso cold-brewed with cardamom, served iced. 12 / 16 oz — 4.69 / 5.16", "price": "4.69", "tags": [], "source": "official-pdf"},
+        {"name": "Cherry Cola Cold Brew", "desc": "Sludge cold brew, house-made cherry cola syrup, topped with cold foam (contains dairy), 16 oz", "price": "5.15", "tags": [], "source": "grubhub-derived"},
+        {"name": "Tea", "desc": "Numi organic tea. 12 / 16 oz — 2.34 / 2.81", "price": "2.34", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Tea", "desc": "Unsweetened black tea", "price": "2.34", "tags": [], "source": "grubhub-derived"},
+        {"name": "Hot Chocolate", "desc": "12 / 16 / 20 oz — 3.28 / 4.22 / 4.69", "price": "3.28", "tags": [], "source": "official-pdf"},
+        {"name": "Lemonade", "desc": null, "price": "2.34", "tags": [], "source": "grubhub-derived"},
+        {"name": "Orange Juice", "desc": null, "price": "2.50", "tags": [], "source": "grubhub-derived"},
+        {"name": "Apple Juice", "desc": null, "price": "2.50", "tags": [], "source": "grubhub-derived"},
+        {"name": "Milk", "desc": null, "price": "2.50", "tags": [], "source": "grubhub-derived"},
+        {"name": "Chocolate Milk", "desc": null, "price": "2.50", "tags": [], "source": "grubhub-derived"},
+        {"name": "Soda", "desc": "12 oz. can", "price": "1.63", "tags": [], "source": "grubhub-derived"},
+        {"name": "Bottled Water", "desc": "16.9 oz", "price": "1.65", "tags": [], "source": "grubhub-derived"},
+        {"name": "Kombucha", "desc": "Health-Ade kombucha, Ginger Lemon, 11.5 oz can", "price": "5.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Jackie's Juice", "desc": "12 oz bottle. Ingredients change weekly — call for details", "price": "10.00", "tags": [], "source": "grubhub-derived"}
+      ]
+    },
+    {
+      "id": "espresso-bar",
+      "name": "Espresso Bar",
+      "blurb": "Kobrick's LMK espresso pulled into everything from a cortado to a dirty chai.",
+      "items": [
+        {"name": "Espresso", "desc": "Kobrick's LMK espresso. Single / double — 2.81 / 3.75", "price": "2.81", "tags": [], "source": "official-pdf"},
+        {"name": "Americano", "desc": "Espresso with water. 12 / 16 / 20 oz — 3.28 / 4.22 / 6.33", "price": "3.28", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Americano", "desc": "Espresso with water over ice. 16 oz contains 3 shots, 20 oz contains 4 shots", "price": "4.22", "tags": [], "source": "grubhub-derived"},
+        {"name": "Red Eye", "desc": "Drip coffee with espresso added. 12 / 16 / 20 oz — 3.28 / 4.22 / 4.69", "price": "3.28", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Red Eye", "desc": "Iced drip coffee with a double shot of espresso", "price": "4.22", "tags": [], "source": "grubhub-derived"},
+        {"name": "Cappuccino", "desc": "Espresso with foamed milk. 12 / 16 / 20 oz — 3.75 / 4.22 / 4.69", "price": "3.75", "tags": [], "source": "official-pdf"},
+        {"name": "Latte", "desc": "Espresso with steamed milk. 12 / 16 / 20 oz — 3.99 / 4.45 / 4.92", "price": "3.99", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Latte", "desc": "Double shot of espresso with milk over ice", "price": "4.45", "tags": [], "source": "grubhub-derived"},
+        {"name": "Macchiato", "desc": "Made traditionally — espresso with a scoop of foamed milk. Single / double — 3.28 / 4.22", "price": "3.28", "tags": [], "source": "official-pdf"},
+        {"name": "Cortado", "desc": "Double shot of espresso with an equal part of steamed milk", "price": "4.45", "tags": [], "source": "official-pdf"},
+        {"name": "Flat White", "desc": "Double shot of espresso with an equal part of foamed milk", "price": "4.45", "tags": [], "source": "grubhub-derived"},
+        {"name": "Café Au Lait", "desc": "Drip coffee with steamed milk. 12 / 16 / 20 oz — 3.28 / 4.22 / 4.69", "price": "3.28", "tags": [], "source": "official-pdf"},
+        {"name": "Vanilla Chai Latte", "desc": "Pre-sweetened vanilla chai steamed with milk. 12 / 16 / 20 oz — 3.99 / 4.45 / 4.92", "price": "3.99", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Vanilla Chai Latte", "desc": "Pre-sweetened vanilla chai mixed with milk over ice", "price": "4.45", "tags": [], "source": "grubhub-derived"},
+        {"name": "Spiced Chai Latte", "desc": "Black tea concentrate infused with vanilla, warm spices and honey, steamed with milk and garnished with cinnamon. 12 / 16 / 20 oz — 3.99 / 4.45 / 4.92", "price": "3.99", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Spiced Chai Latte", "desc": "Black tea concentrate infused with vanilla, warm spices and honey, mixed with milk", "price": "4.45", "tags": [], "source": "grubhub-derived"},
+        {"name": "Dirty Chai", "desc": "Vanilla chai latte with espresso added. 12 / 16 / 20 oz — 4.45 / 5.16 / 5.64", "price": "4.45", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Dirty Vanilla Chai", "desc": "Double espresso and vanilla chai with milk of choice", "price": "5.15", "tags": [], "source": "grubhub-derived"},
+        {"name": "Matcha Latte", "desc": "Organic Japanese green tea matcha steamed with milk. 12 / 16 oz — 5.63 / 6.10", "price": "5.63", "tags": [], "source": "official-pdf"},
+        {"name": "Iced Matcha Latte", "desc": "Organic Japanese green tea matcha mixed with milk", "price": "6.10", "tags": [], "source": "grubhub-derived"},
+        {"name": "London Fog", "desc": "Earl Grey tea with vanilla and steamed milk", "price": "3.27", "tags": [], "source": "grubhub-derived"},
+        {"name": "Berry 'Biscus Refresher", "desc": "Hibiscus tea blend, raspberry jam, coconut milk. Pre-batched, iced only, no modifications", "price": "4.68", "tags": [], "source": "grubhub-derived"},
+        {"name": "Banana Cream Cortado", "desc": "Banana puree, white chocolate, espresso, steamed half & half, whipped cream. 8 oz, hot only, no modifications", "price": "5.15", "tags": [], "source": "grubhub-derived"}
+      ]
+    },
+    {
+      "id": "specials",
+      "name": "Specials",
+      "blurb": "Rotating kitchen experiments that regulars keep asking to make permanent.",
+      "items": [
+        {"name": "Spicy Chicken & Brie Sandwich", "desc": "Grilled chicken, Brie cheese, habanero bacon jam & arugula on ciabatta", "price": "14.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Brie-licious Ham Sandwich", "desc": "Ham, Brie cheese, avocado, arugula & orange marmalade on cranberry pecan bread", "price": "12.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Tuscan Omelet", "desc": "Roasted red pepper, spinach, fresh basil & Parmesan cheese. Served with multigrain toast and potato hash", "price": "12.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "The Pearfect Croissandwich", "desc": "Turkey, cheddar cheese, avocado, pear, arugula & honey Dijon mustard on a croissant", "price": "14.00", "tags": [], "source": "grubhub-derived"},
+        {"name": "Tropical Overnight Oats", "desc": "Oats soaked in oat milk, coconut milk & chia seeds, topped with pineapple, mango, blueberries, honey & toasted coconut. Served cold", "price": "10.00", "tags": [], "source": "grubhub-derived"}
+      ]
+    }
+  ],
+  "buildYourOwn": {
+    "note": "Choices listed on the printed menu for the Custom Omelet and Custom Egg Sandwich.",
+    "bread": ["Multigrain", "Rye", "White", "English muffin", "Brioche", "Ciabatta", "Cranberry pecan"],
+    "cheese": ["Gouda", "Cheddar", "American", "Goat cheese", "Gruyere", "Mozzarella", "Brie"],
+    "meats": ["Bacon", "Ham", "Chorizo", "Turkey", "Turkey bacon", "Breakfast sausage"],
+    "veggies": ["Broccoli", "Spinach", "Tomato", "Onion", "Red pepper", "Kale"],
+    "upcharges": {
+      "eachAdditionalFilling": "1.00",
+      "substituteEggWhites": "2.00",
+      "addShiitakeOrAvocado": "2.00"
+    }
+  },
+  "meta": {
+    "name": "Red Eye Cafe",
+    "address": "94 Walnut St, Montclair, NJ 07042",
+    "phone": "(973) 509-3663",
+    "hours": "8:00am–3:00pm, Monday–Sunday",
+    "email": "anthony@drinkredeyes.com",
+    "website": "https://www.redeyenj.com/",
+    "since": 2012,
+    "tagline": "Food, Coffee, Comfort.",
+    "about": "Slinging great food and drinks since 2012, Red Eye Cafe has led the way for the growing Walnut Street food and coffee scene. Often imitated but never duplicated, Red Eye stays true to its mission to deliver quality stuff, at a good price, without all the fluff.",
+    "wifi": {"network": "Red-Eye-Guest", "password": "elephant"},
+    "dietaryKey": {"Gluten-Free": "GF", "Vegetarian": "V", "Vegan": "V+"},
+    "priceNote": "Prices are in-store base prices. Items marked source \"official-pdf\" come directly from Red Eye's own printed menus (Menu 12.05.25, downloaded from redeyenj.com). Items marked \"grubhub-derived\" exist only on the delivery platforms; their prices were converted back to in-store base by removing the platform markup, which was verified to be exactly 10% across dozens of overlapping items (e.g. Elvis $7.70 on Grubhub vs. $7 on the printed menu, Salmon BLT $17.60 vs. $16). Derived prices may be off by a cent from the true register price. Coffee prices shown are the 12 oz price; larger sizes are listed in the item description. Delivery-platform prices (Grubhub, DoorDash, Uber Eats, MenuPix) run roughly 10% higher than these.",
+    "popularNote": "The \"Popular\" tag reflects the union of Grubhub \"Best Seller\" badges, DoorDash Featured/Most Liked items, and MenuPix \"Popular Menu Items\".",
+    "gaps": [
+      "No kids' menu appears on the official site or on any delivery platform.",
+      "No bakery/pastry list is published anywhere; Grubhub reviewers note bakery goods must be added by calling the cafe directly and paying separately.",
+      "The 20 oz Matcha Latte price is physically cut off in the official PDF (reads \"6.\"); Grubhub implies roughly $6.57 in-store, so it is left out rather than guessed.",
+      "Soup of the day rotates daily and is not published; the menu says to call.",
+      "Uber Eats is behind a Cloudflare bot check and could not be read; Grubhub and DoorDash carry the same nine categories, so nothing appears to be missing.",
+      "The MenuPix listing links an outdated website (drinkredeyes.com) and shows delivery-platform prices, so it was used only for cross-checking popular items.",
+      "\"Single-Use Items\" ($0.00 utensil opt-in) appears on Grubhub in every category and was intentionally excluded.",
+      "Specials rotate; the five listed were live on Grubhub at the time of research."
+    ]
+  },
+  "sources": [
+    {"label": "Red Eye Cafe – official site", "url": "https://www.redeyenj.com/"},
+    {"label": "Red Eye Cafe – official breakfast menu PDF (Menu 12.05.25-1)", "url": "https://www.redeyenj.com/app/download/17307051/Menu12.05.25-1.pdf"},
+    {"label": "Red Eye Cafe – official lunch, salads, sides & coffee menu PDF (Menu 12.05.25-2)", "url": "https://www.redeyenj.com/app/download/17307056/Menu12.05.25-2.pdf"},
+    {"label": "Red Eye Cafe – official coffee page", "url": "https://www.redeyenj.com/coffee/"},
+    {"label": "Grubhub – Red Eye Cafe menu", "url": "https://www.grubhub.com/restaurant/red-eye-cafe-94-walnut-st-montclair/2309255"},
+    {"label": "DoorDash – Red Eye Cafe menu", "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/"},
+    {"label": "Uber Eats – Red Eye Cafe menu", "url": "https://www.ubereats.com/store/red-eye-cafe/6MA0C_w1V-6sBRdLqqzR1A"},
+    {"label": "MenuPix – Red Eye Cafe, Montclair NJ", "url": "https://www.menupix.com/newjersey/restaurants/380195531/Red-Eye-Cafe-Montclair-NJ"}
+  ]
+}

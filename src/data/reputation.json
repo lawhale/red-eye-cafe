@@ -1,0 +1,625 @@
+{
+  "meta": {
+    "business": "Red Eye Cafe",
+    "address": "94 Walnut St, Montclair, NJ 07042",
+    "website": "https://www.redeyenj.com/",
+    "owner": "Anthony Brinton (founded Feb/May 2012; formerly manager & chief barista at Cafe Eclectic, Montclair)",
+    "hours": "8:00am-3:00pm daily",
+    "researchedOn": "2026-07-30",
+    "methodNote": "Yelp, Google Maps and TripAdvisor all blocked direct scraping (CAPTCHA / empty render / timeouts). Ratings and review text were recovered through third-party mirrors and aggregators that syndicate those platforms (MapQuest, Giftly, Foodeist, RestaurantGuru, Restaurantji, MenuPix, menuweb.menu, Atly, Stormrage local-SEO audit) plus first-party delivery platforms (Grubhub, DoorDash via search index) and press.",
+    "blockedSources": [
+      {
+        "platform": "Yelp",
+        "url": "https://www.yelp.com/biz/red-eye-cafe-montclair",
+        "blocked": true,
+        "detail": "Direct fetch and r.jina.ai proxy both returned CAPTCHA/empty. Mobile URL (m.yelp.com) timed out. Yelp review text below came only from licensed syndication on MapQuest and Giftly (Yelp Fusion API excerpts), which truncate reviews to ~150 characters."
+      },
+      {
+        "platform": "Google Maps / Google Reviews",
+        "url": "https://www.google.com/maps/search/Red+Eye+Cafe+94+Walnut+St+Montclair+NJ",
+        "blocked": true,
+        "detail": "No direct access to the Google Maps place page. Google star rating and review count taken from Stormrage local-SEO audit page (which reads the Google Business Profile) and RestaurantGuru; Google review text taken from RestaurantGuru and menuweb.menu mirrors."
+      },
+      {
+        "platform": "TripAdvisor",
+        "url": "https://www.tripadvisor.com/Restaurant_Review-g46637-d4283861-Reviews-Red_Eye_Cafe-Montclair_New_Jersey.html",
+        "blocked": true,
+        "detail": "Direct fetch returned an empty body; r.jina.ai proxy hit CAPTCHA; .co.nz mirror timed out on full fetch. TripAdvisor review text below was recovered from search-engine indexed excerpts of the .co.nz ShowUserReviews page."
+      },
+      {
+        "platform": "DoorDash",
+        "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+        "blocked": true,
+        "detail": "Cloudflare bot verification on direct fetch. Review text recovered from search-engine indexed excerpts of the same page."
+      },
+      {
+        "platform": "Reddit (r/newjersey, r/montclair)",
+        "url": "https://www.reddit.com/r/newjersey/",
+        "blocked": false,
+        "detail": "Not blocked - simply no results. Site-scoped searches for Red Eye Cafe on Reddit returned zero hits. No Reddit or Nextdoor discussion of this business was found."
+      },
+      {
+        "platform": "Instagram / Facebook",
+        "url": "https://www.instagram.com/redeyecafe/",
+        "blocked": true,
+        "detail": "Handle confirmed as @redeyecafe (not @redeyecafenj); Facebook page is facebook.com/RedEyeCafe. Instagram fetch returned only base64 image payloads, no readable captions or comments. No usable social evidence gathered."
+      }
+    ]
+  },
+
+  "ratings": [
+    {
+      "platform": "Google",
+      "score": 4.5,
+      "count": 672,
+      "url": "https://stormrage.nyc/local-seo-audit/red-eye-cafe-493419/",
+      "asOf": "2026-07",
+      "blocked": true,
+      "note": "VERIFIED, slight correction to the starting figure of ~675. Stormrage's local-SEO audit reads the live Google Business Profile and reports '4.5 / 672 Google reviews'. RestaurantGuru independently states 'Google users assigned the score of 4.5 to this cafe.' Google Maps itself could not be fetched directly."
+    },
+    {
+      "platform": "Yelp",
+      "score": 4.2,
+      "count": 749,
+      "url": "https://www.yelp.com/biz/red-eye-cafe-montclair",
+      "asOf": "2026-07",
+      "blocked": true,
+      "note": "VERIFIED. Foodeist reports 'Yelp 4.2/5 · 749 votes'; MapQuest's Yelp-syndicated widget shows (749) reviews. Giftly's Yelp Fusion API snapshot (updated May 2025) shows 4.2 stars / 739 reviews, consistent with growth to 749. Exact matches the starting fact."
+    },
+    {
+      "platform": "TripAdvisor",
+      "score": 4.5,
+      "count": 106,
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g46637-d4283861-Reviews-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "asOf": "2026-07",
+      "blocked": true,
+      "note": "Foodeist and RestaurantGuru both report TripAdvisor 4.5/5 from 106 votes. The TripAdvisor page itself states 'Ranked #6 of 235 Restaurants in Montclair'."
+    },
+    {
+      "platform": "DoorDash",
+      "score": 4.8,
+      "count": 3000,
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "asOf": "2026-07",
+      "blocked": true,
+      "note": "Listed as '4.8 (3k+)' with '3k+ ratings • 40+ public reviews'. Count is DoorDash's own rounding, not an exact figure."
+    },
+    {
+      "platform": "Grubhub",
+      "score": 5.0,
+      "count": 553,
+      "url": "https://www.grubhub.com/restaurant/red-eye-cafe-94-walnut-st-montclair/2309255",
+      "asOf": "2026-07",
+      "blocked": false,
+      "note": "Delivery-only rating; treat as weak evidence. Grubhub ratings skew high and are not comparable to Yelp/Google."
+    },
+    {
+      "platform": "Restaurantji",
+      "score": 4.1,
+      "count": 234,
+      "url": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/",
+      "asOf": "2026-05",
+      "blocked": false,
+      "note": "Sub-scores are informative: Food 4.6, Atmosphere 4.7, Service 4.4 - atmosphere is the highest-rated dimension and service the lowest, which matches the qualitative pattern in the reviews."
+    },
+    {
+      "platform": "Atly",
+      "score": 8.8,
+      "count": null,
+      "url": "https://www.atly.com/location/RedEyeCafe",
+      "asOf": "2026-07",
+      "blocked": false,
+      "note": "Atly uses a 10-point scale. Ranks Red Eye #1 in 'Breakfast and eggs in Montclair', #3 in 'Coffee date spots in Montclair', #3 in 'Cool food in Montclair'."
+    }
+  ],
+
+  "raves": [
+    {
+      "dish": "Omelettes (House Omelet / Egg White Omelet)",
+      "mentions": 7,
+      "avgStars": null,
+      "quote": "The House Omelette is like heaven on a plate, and the chef is nice enough to cook it exactly the way I like it. Love this place!",
+      "source": "Grubhub",
+      "url": "https://www.grubhub.com/restaurant/red-eye-cafe-94-walnut-st-montclair/2309255",
+      "basis": "Counted 7 distinct reviews mentioning an omelette across roughly 55 review texts I was able to read on 2026-07-30 (Grubhub 3, DoorDash 2, MenuPix 1, Atly aggregated quote 1). Most were unrated delivery reviews, so no honest average star value can be computed.",
+      "supportingQuotes": [
+        "Best omelettes in town !! (Grubhub, Nov 2, 2025)",
+        "Best omelette in town! (Grubhub, Oct 3, 2025)",
+        "The incredibly delicious egg white omelet ihas become my go-to breakfast favorite. It is so light and fluffy that it seems as though the egg whites have been beaten. (DoorDash, Dec 11, 2024)",
+        "yummm the Omelet was so delicious. I ordered it with spinach, shallots, and shitakes- perfect combo. (DoorDash, Aug 2, 2025)"
+      ]
+    },
+    {
+      "dish": "Buttermilk Pancakes (incl. banana-walnut)",
+      "mentions": 6,
+      "avgStars": null,
+      "quote": "The buttermilk pancakes with walnuts and bananas were irresistibly fluffy, complemented perfectly by fresh toppings and just the right amount of syrup",
+      "source": "MenuPix",
+      "url": "https://www.menupix.com/restaurant-review/380195531/",
+      "basis": "Counted 6 distinct reviews/writeups referencing buttermilk or banana-walnut pancakes across roughly 55 review texts read on 2026-07-30 (MenuPix 3, menuweb.menu/Google summary 1, RestaurantGuru/Google 1, My Local Nooks writeup 1). MenuPix does not display per-review star values."
+    },
+    {
+      "dish": "Pumpkin Buttermilk Pancakes (seasonal)",
+      "mentions": 3,
+      "avgStars": null,
+      "quote": "Had the best pumpkin pancakes ever with a side of real bacon. the best bacon.",
+      "source": "Restaurantji",
+      "url": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/",
+      "basis": "3 observed mentions on 2026-07-30: one Restaurantji customer review (Oct 2023), The Montclarion's 2017 feature, and NJ Monthly's 2012 Quick Bite. Seasonal item, so low count is expected."
+    },
+    {
+      "dish": "Breakfast Burger (Angus)",
+      "mentions": 4,
+      "avgStars": null,
+      "quote": "The angus Breakfast Burger is to die for!!! They always make everything fresh! BEST cafe in Montclair. Hands down",
+      "source": "DoorDash",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "basis": "4 observed mentions across roughly 55 review texts read on 2026-07-30 (DoorDash 1, MenuPix 3). The DoorDash review is tagged 'Loved' rather than given a numeric star value."
+    },
+    {
+      "dish": "Green Eggs and Ham",
+      "mentions": 5,
+      "avgStars": null,
+      "quote": "I had the green eggs and ham which was excellent. They give a large portion, but I like the fact they serve it with fruit and toast instead of potatoes.",
+      "source": "TripAdvisor",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "basis": "5 observed mentions on 2026-07-30: 2 positive TripAdvisor reviews, 1 negative Foodeist review ('It was incredibly bland'), 1 mostly-positive Garden State Grubber blog review, 1 Grubhub order line. This is the most polarizing dish I observed - counting it as a rave requires the caveat that one detailed reviewer disliked it. Also NJ Monthly's official 'Don't Miss' pick."
+    },
+    {
+      "dish": "Huevos Rancheros",
+      "mentions": 4,
+      "avgStars": null,
+      "quote": "This was my first visit to the cafe, and I decided to order huevos rancheros (ranch eggs). It tasted amazing. Everything went together perfectly from the chorizo (pork sausage) to the black beans to the pico de gallo.",
+      "source": "The Montclarion",
+      "url": "https://themontclarion.org/feature/red-eye-cafe/",
+      "basis": "4 observed mentions on 2026-07-30: The Montclarion feature, one Seamless review ('Really exceptional food, I got the huevos rancheros'), My Local Nooks writeup, and Stormrage's Google-review keyword extraction which flags 'Huevos Rancheros - in 1 review'. Also listed among Restaurantji's 'Customers' Favorites'."
+    },
+    {
+      "dish": "The Highlander (scotch egg banh mi)",
+      "mentions": 5,
+      "avgStars": null,
+      "quote": "The Highlander was a different experience. I didn't think I was going to like the hard boiled egg fried in all of those flavors, but I did! The yolk was creamy, the veggies crunchy and vinegary. Red Eye's bread is to die for!",
+      "source": "Kristen Martinelli (food blog)",
+      "url": "https://www.kmartinelli.com/blog/red-eye-cafe-montclair-nj",
+      "basis": "5 observed mentions on 2026-07-30, but note these are almost entirely PRESS/BLOG mentions (kmartinelli, The Montclarion, My Local Nooks, Montclair Girl, menuweb.menu summary) rather than ordinary customer reviews. It is the cafe's signature 'weird thing' - critics rave about it more than everyday reviewers mention it."
+    },
+    {
+      "dish": "Candied Bacon",
+      "mentions": 4,
+      "avgStars": null,
+      "quote": "the candied bacon is like crack it's so addictive, so be warned!",
+      "source": "DoorDash",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "basis": "4 observed mentions on 2026-07-30: DoorDash 1, TripAdvisor 1 ('We shared the candied bacon which was very good... It was not overly sweet'), NJ Monthly 1, My Local Nooks 1."
+    },
+    {
+      "dish": "Red Eye Sub / Red Eye Corned Beef Hash",
+      "mentions": 3,
+      "avgStars": null,
+      "quote": "I opted for the Red Eye Sub, a hefty sandwich loaded with fried eggs, corned beef hash, and espresso hot sauce gravy. I was expecting the typical canned corned beef hash that resembles dog food more than a breakfast staple, but was pleasantly surprised to see large chunks of hand-cut corned beef along with nicely crisped potatoes fall out of my sandwich.",
+      "source": "TripAdvisor",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "basis": "3 observed mentions on 2026-07-30: TripAdvisor 1, Garden State Grubber blog 1 ('the red eye gravy was superb and worked well with the hearty elements of the dish'), menuweb.menu review summary 1. Also top of Restaurantji's 'Customers' Favorites' list."
+    },
+    {
+      "dish": "French Toast (hand-dipped)",
+      "mentions": 3,
+      "avgStars": null,
+      "quote": "The hand -dipped French toast topped with real maple syrup and strawberries is also delicious.",
+      "source": "DoorDash",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "basis": "3 observed mentions on 2026-07-30: DoorDash 1 (positive), TripAdvisor 1 (mixed - 'a little light on the serving size' but preferred to a rival), Restaurantji 'Customers' Favorites' listing 1."
+    },
+    {
+      "dish": "Coffee - New Orleans Sludge / Dirty Chai / Vanilla Chai",
+      "mentions": 11,
+      "avgStars": null,
+      "quote": "the main headliner is the coffee",
+      "source": "Google (via menuweb.menu mirror)",
+      "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+      "basis": "11 observed mentions of coffee quality across roughly 55 review texts read on 2026-07-30, spread over Google, Yelp-syndicated, Grubhub, Restaurantji, Atly and press. This is the single most consistently praised item and the only one praised even inside otherwise-negative reviews ('the coffee is always great BUT the food wait times are out of control'). The 'sludge' (cold-brewed dark roast/espresso with cardamom) is the named signature and appears in Baristanet, Montclair Girl and My Local Nooks.",
+      "supportingQuotes": [
+        "The coffee here is rich, smooth, and brewed with care. (Atly, aggregated from 35 sources)",
+        "The coffee is exceptional - rich, smooth, and clearly brewed with care. (Mariya Okhten, Google)",
+        "Over the summer I became addicted to Red Eye's signature iced coffee drink called a New Orleans Sludge, which is a cold brewed French roast iced latte. (Baristanet)"
+      ]
+    },
+    {
+      "dish": "House-made Baked Goods (scones, cookies, coffee cake, banana nut bread)",
+      "mentions": 4,
+      "avgStars": null,
+      "quote": "You have to get there early to get some of the baked goods - scones, cookies and other bites. I never get their early enough, and since they are so good, they are mostly gone by 10:00am.",
+      "source": "Google (via menuweb.menu mirror)",
+      "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+      "basis": "4 observed mentions on 2026-07-30. Note this is genuinely mixed: one 2-star Yelp review (Lisa B., 3/17/2025) specifically complained the baked goods were 'sliced already and wrapped in plastic wrap'. Counted as a rave on volume, not unanimity."
+    },
+    {
+      "dish": "Shrimp & Grits (coconut grits, chorizo, curry cream)",
+      "mentions": 3,
+      "avgStars": null,
+      "quote": "Shrimp and grits was awesome. Try the Brussels sprouts!",
+      "source": "TripAdvisor",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "basis": "3 observed mentions on 2026-07-30 (TripAdvisor 1, NJ Monthly 1, Montclair Girl 1). Dates from the era when Red Eye served dinner; current hours are 8am-3pm, so verify the dish is still on the menu before leaning on it."
+    },
+    {
+      "dish": "Soup / Salad / Sandwich combo (value pick)",
+      "mentions": 2,
+      "avgStars": null,
+      "quote": "Soup, salad, sandwich meal at $9.35 is more than a good deal. Red Eye's high standard of fresh healthy ingredients and tasty food were upheld. Every item was good. This meal was a real treasure and I will purchase it again.",
+      "source": "DoorDash",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "basis": "Only 2 observed mentions on 2026-07-30 (DoorDash 1, Restaurantji 'Customers' Favorites' listing 1). Low count - included because it is the clearest evidence for the value/price angle, not because it is high-volume."
+    },
+    {
+      "dish": "Pesto Broccoli Scramble Sandwich",
+      "mentions": 1,
+      "avgStars": null,
+      "quote": "I had the Pesto Broccoli Scramble Sandwich for the first time. I have never ate broccoli with such relish and murmurs of delight.",
+      "source": "DoorDash",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "basis": "Exactly 1 observed mention on 2026-07-30. Included only because the quote is unusually vivid; the mention count does not support calling this a top rave."
+    }
+  ],
+
+  "quotes": [
+    {
+      "text": "Always delicious and cozy. I appreciate the chill, cozy vibe. The servers are friendly and help with suggestions.",
+      "author": "Kristin W.",
+      "platform": "Yelp",
+      "stars": null,
+      "date": "2026-06 (approx; MapQuest showed '1 month ago' as of 2026-07-30)",
+      "url": "https://www.mapquest.com/us/new-jersey/red-eye-cafe-277767025",
+      "note": "Recovered via MapQuest's Yelp syndication; MapQuest does not display the star value for this excerpt."
+    },
+    {
+      "text": "Worth the wait for the delicious brunch at this cute cafe. Great local spot, highly recommended from friends, and a great little coffee bar to boot. Definitely plan ahead and try to get a table...",
+      "author": "Andrew G.",
+      "platform": "Yelp",
+      "stars": 5,
+      "date": "2025-01-22",
+      "url": "https://www.yelp.com/biz/red-eye-cafe-montclair?hrid=kgQVhrsScjwpOEyKPDPx0g",
+      "note": "Truncated by Yelp's API at source. Star value confirmed as 5 via Giftly's Yelp Fusion widget."
+    },
+    {
+      "text": "Great spot for breakfast and a coffee. It's small inside so you may have to wait but it's well worth it. There's tons on the menu and the service was great. Everyone working was really nice.",
+      "author": "Lindsey R.",
+      "platform": "Yelp",
+      "stars": null,
+      "date": "2026-02 (approx; MapQuest showed '5 months ago')",
+      "url": "https://www.mapquest.com/us/new-jersey/red-eye-cafe-277767025",
+      "note": "Truncated at source."
+    },
+    {
+      "text": "Adorable spot on Walnut, less than a block from the train makes for an idea, post-work Sammy spot.",
+      "author": "Eric W.",
+      "platform": "Yelp",
+      "stars": null,
+      "date": "2026-04 (approx; MapQuest showed '3 months ago')",
+      "url": "https://www.mapquest.com/us/new-jersey/red-eye-cafe-277767025",
+      "note": "Truncated at source; typos ('idea', 'Sammy') are verbatim."
+    },
+    {
+      "text": "Red Eye Café in Montclair is a true neighborhood gem — cozy, creative, and effortlessly cool. The vibe strikes the perfect balance between relaxed and lively, making it a great spot for weekend brunch or a casual weekday coffee. Their menu leans fresh and inventive, with hearty breakfast plates, seasonal ingredients, and plenty of vegetarian-friendly options. The coffee is exceptional — rich, smooth, and clearly brewed with care. Service is consistently warm and welcoming, even during the busiest hours.",
+      "author": "Mariya Okhten",
+      "platform": "Google",
+      "stars": 5,
+      "date": "2025-10 (approx; RestaurantGuru showed '9 months ago')",
+      "url": "https://restaurantguru.com/Red-Eye-Cafe-Newark",
+      "note": "Reviewer's own sub-ratings: Food 5, Service 5, Atmosphere 5."
+    },
+    {
+      "text": "This is a sweet small quiet cafe with good food and coffee. I definitely will go back.",
+      "author": "Deirdre Karcher",
+      "platform": "Google",
+      "stars": 5,
+      "date": "2026-01 (approx; RestaurantGuru showed '6 months ago')",
+      "url": "https://restaurantguru.com/Red-Eye-Cafe-Newark",
+      "note": "Sub-ratings: Food 5, Service 5, Atmosphere 5. Also noted 'Somewhat difficult to find parking' and full wheelchair accessibility ('Yes all on 1 level')."
+    },
+    {
+      "text": "I have been coming to Red Eye Cafe for years. I mostly go there for brunch on Sundays, and sometimes Saturdays. The staff at Red Eye Cafe is consistently friendly. The key is they do not have much turnover in staff which is healthy for any small business. I totally support that. This location has a very relaxed, New York City punk vibe, they are also located in Montclair, New Jersey a city with many talented budding artists. Not surprisingly, the cafe supports the local arts and local artists. If you go there enough, you see people of all types and ages from the local and even expanded community. The food items are also very tasty, but the main headliner is the coffee.",
+      "author": "Enrique",
+      "platform": "Google (via menuweb.menu mirror)",
+      "stars": null,
+      "date": "2025-05-24 (mirror timestamp)",
+      "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+      "note": "The single most useful vibe quote found. The mirror renders all star ratings identically, so the numeric rating is not trustworthy and is recorded as null. Spacing artifacts from the mirror have been left as-is except where words were run together."
+    },
+    {
+      "text": "The moment I stepped inside, the cozy atmosphere with its bookstore and coffeehouse vibe immediately put me at ease, while the attentive service made catching up with a friend feel unhurried and genuine.",
+      "author": "Jennifer S.",
+      "platform": "MenuPix",
+      "stars": null,
+      "date": "2026-01-17",
+      "url": "https://www.menupix.com/restaurant-review/380195531/",
+      "note": "MenuPix reviews on this page are stylistically very similar to one another and may be editorially processed; treat as softer evidence than Yelp/Google."
+    },
+    {
+      "text": "The cafe is small, but superbly inviting and warm. The white subway-tiled walls and cafe name emblazoned in mosaic tile evoke more of a sense that you're about to board a 6-local train to Bleecker Street, rather than be handed a mocha late. To sum it up, it's small, quaint, full of character and very cool - a place you wouldn't mind spending a few hours drinking a coffee and getting lost in a good book.",
+      "author": "TripAdvisor reviewer (username not captured)",
+      "platform": "TripAdvisor",
+      "stars": null,
+      "date": "unknown",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "note": "Best single description of the room found anywhere, including press. The same reviewer opens by noting they came because Brinton previously ran Cafe Eclectic. Author name unavailable because the TripAdvisor page could not be fully rendered."
+    },
+    {
+      "text": "I went through and read most of the reviews. I think almost everyone was happy with this place including myself and my group. There was maybe one exception who thought it was crowded, noisey, and mediocre food? Well I totally disagree, it was busy but I didn't feel like I was right on top of anyone else. It's a cute place and definitely on the smaller side but they make it work. the staff was very nice and the food and coffees were better than good!",
+      "author": "TripAdvisor reviewer (username not captured)",
+      "platform": "TripAdvisor",
+      "stars": null,
+      "date": "unknown",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html"
+    },
+    {
+      "text": "My wife and I did breakfast at the Red Eye this morning at 9am. Given that it's 4:30pm and I'm still full, you know that the portion sizes are large!",
+      "author": "TripAdvisor reviewer (username not captured)",
+      "platform": "TripAdvisor",
+      "stars": null,
+      "date": "unknown",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html"
+    },
+    {
+      "text": "Great coffee, amazing brunch. Everything on the brunch menu is delicious, especially the waffle sandwich. The service is impeccable.",
+      "author": "TripAdvisor reviewer (username not captured)",
+      "platform": "TripAdvisor",
+      "stars": null,
+      "date": "2014-11",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html",
+      "note": "Titled 'Love this place'. Older review - dates from when Red Eye also served dinner."
+    },
+    {
+      "text": "Always awesome and if you wanna add bakery goods, you can do so by calling the café and paying for it separately. Food is always fresh and wholesome. They use the best ingredients and although I don't order their coffees from GrubHub, I've been to the café in person and they're always amazing. I love redeye.",
+      "author": "Grubhub customer (name not shown)",
+      "platform": "Grubhub",
+      "stars": null,
+      "date": "2025-03-25",
+      "url": "https://www.grubhub.com/restaurant/red-eye-cafe-94-walnut-st-montclair/2309255"
+    },
+    {
+      "text": "Everything was tops: top quality, top flavor, top preparation, top service, and great prices. I had the Pesto Broccoli Scramble Sandwich for the first time. I have never ate broccoli with such relish and murmurs of delight. And they are eco-intentional as well. What a great restaurant!",
+      "author": "DoorDash customer (name not shown)",
+      "platform": "DoorDash",
+      "stars": null,
+      "date": "2025-01-26",
+      "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/",
+      "note": "Tagged 'Loved' by DoorDash rather than given a numeric rating."
+    },
+    {
+      "text": "Pretty cute, hipster brunch spot. The wait wasn't bad at all on a Sunday afternoon (about 10 minutes) despite it being pretty small and crowded. Their drip coffee is decent but I wasn't a fan of the meal that I got; Green Eggs and Ham. It was incredibly bland, in my opinion, and even adding mounds of hot sauce and ketchup did not help at all.",
+      "author": "Alina M.",
+      "platform": "Foodeist (syndicated)",
+      "stars": null,
+      "date": "2017-11",
+      "url": "https://foodeist.com/place/red-eye-cafe",
+      "note": "Included deliberately as a counterweight - the strongest negative food review found."
+    },
+    {
+      "text": "I've been going here for years and the service is just truly on the decline. Some of the food is great (pancakes, some sandwiches), the coffee is always great BUT the food wait times are out of control. Today we waited just shy of an hour for a burger and eggs. No apology or anything and no one ever checked on us. All the tables around us were having the same issues.",
+      "author": "Julia",
+      "platform": "Google (via menuweb.menu mirror)",
+      "stars": null,
+      "date": "2025-05-24 (mirror timestamp)",
+      "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+      "note": "The single clearest articulation of the dominant complaint. Note it still concedes the coffee and pancakes are great."
+    },
+    {
+      "text": "I guess don't go on Sundays. Our food was placed 20 min after we ordered it and that's because I had to go and check if our food was almost ready. The drinks were also made incorrectly. It was packed and the communication skills were poor. The food was okay, just long wait.",
+      "author": "Francia",
+      "platform": "Google (via menuweb.menu mirror)",
+      "stars": null,
+      "date": "2025-05-24 (mirror timestamp)",
+      "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe"
+    },
+    {
+      "text": "I was charged $7 for a cup of coffee. I'd much rather not give my money to businesses in Montclair at this rate and go to Dolce Marie in Verona ($3) or Light Bulb Cafe ($2) in West Orange for tastier Americanos.",
+      "author": "Restaurantji reviewer (name not shown)",
+      "platform": "Restaurantji",
+      "stars": null,
+      "date": "2022-02",
+      "url": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/",
+      "note": "Price complaint; note it is an outlier and dates from 2022. Most reviewers describe pricing as fair."
+    }
+  ],
+
+  "vibe": {
+    "adjectives": [
+      "cozy",
+      "small",
+      "unpretentious",
+      "neighborhood",
+      "industrial-chic",
+      "vintage",
+      "warm",
+      "eclectic",
+      "bookish",
+      "relaxed",
+      "lived-in",
+      "artsy",
+      "Brooklyn-ish",
+      "off-the-beaten-path",
+      "linger-friendly"
+    ],
+    "description": "Red Eye Cafe reads as a small, deliberately hand-built room rather than a designed one. Owner Anthony Brinton sanded, stained and buffed the salvaged chairs and countertop-tables himself, hung a chandelier pulled from the 1920s Newark train station, and faced the entrance in white subway tile with the cafe's name set in mosaic. Reviewers reach for transit and city metaphors unprompted: one TripAdvisor writer said the tiled walls 'evoke more of a sense that you're about to board a 6-local train to Bleecker Street, rather than be handed a mocha late,' while The Montclarion wrote that the place 'looks like it belongs in the streets of Brooklyn with its retro interior and relaxed ambiance.' NJ Monthly filed it under 'Intimate, industrial-chic cafe with blackboard walls, old-fashioned wood counter, vintage lighting and a hip vibe.' A long-time Google reviewer went further and called it 'a very relaxed, New York City punk vibe.'\n\nThe room is built to make you stay. Bookshelves run the perimeter stocked with Brinton's own curated collection, from Salman Rushdie to Jonathan Lethem, there are electrical outlets everywhere so laptop users don't have to climb over each other, local artwork hangs on the walls and is for sale, and there's a chess board for anyone who wants to linger over coffee. Brinton stated the intent explicitly when the cafe opened in 2012: 'I want them to know it's the same sort of vibe where you can relax and not get the bum's rush or the hard sell.' Fourteen years later reviewers still describe exactly that experience, using words like unhurried, homie, and effortlessly cool. Restaurantji's dimension scores bear it out: Atmosphere is its single highest-rated attribute at 4.7, above both Food (4.6) and Service (4.4).\n\nThe flip side of small and beloved is small and crowded. The original build was 34 seats in 1,800 square feet, and nearly every source that praises the room also flags the squeeze. Weekend brunch brings 20-30 minute waits between 10am and noon, and the service complaints in the 1- and 2-star reviews cluster tightly around peak Saturday and Sunday hours: hour-long ticket times, orders lost between counter and kitchen, drinks made wrong. Regulars treat this as the known cost of admission rather than a dealbreaker, and one Yelp reviewer summarized the consensus position plainly: 'It's small inside so you may have to wait but it's well worth it.' The location itself reinforces the neighborhood feel; it sits at the quiet end of Walnut Street, less than a block from the train station, which Brinton chose on purpose. As he told the New York Times in 2012: 'This is a sleepy little area, but people want to get out of the center of town. They enjoy the quiet.'",
+    "evidence": [
+      {
+        "claim": "It's small with limited seating, and reviewers consistently pair 'small' with 'worth it'",
+        "source": "Yelp (via MapQuest syndication)",
+        "url": "https://www.mapquest.com/us/new-jersey/red-eye-cafe-277767025",
+        "supporting": "Lindsey R.: 'It's small inside so you may have to wait but it's well worth it.' TripAdvisor: 'it's small, quaint, full of character and very cool.' NYT reported the original build as 34 seats in 1,800 square feet."
+      },
+      {
+        "claim": "The interior is assembled from salvage, by hand, by the owner",
+        "source": "Montclair Local / Baristanet (2012) and The Montclarion (2017)",
+        "url": "https://montclairlocal.news/2012/06/welcome-to-the-red-eye-cafe/",
+        "supporting": "'salvaged chairs and tables made from old countertops, all sanded, stained and buffed by Brinton himself to a fine uniform shine.' Brinton to The Montclarion: 'The chandelier is from the 1920s Newark train station. The brass on the bar and wood is from old-wood flooring.'"
+      },
+      {
+        "claim": "It is explicitly designed for lingering - books, outlets, chess",
+        "source": "Montclair Local / Baristanet (2012), My Local Nooks",
+        "url": "https://montclairlocal.news/2012/06/welcome-to-the-red-eye-cafe/",
+        "supporting": "'around the perimeter of the room are bookshelves stocked with Brinton's own impressively-curated collection of reads, from Salman Rashdie to Jonathan Lethem. And there are electrical outlets everywhere so that laptop users don't have to climb over each other to get a charge.' Brinton: 'I want them to know it's the same sort of vibe where you can relax and not get the bum's rush or the hard sell.' My Local Nooks notes 'There's even a chess board available for customers who want to linger over their coffee.'"
+      },
+      {
+        "claim": "Reviewers independently describe it as Brooklyn / NYC-feeling rather than suburban",
+        "source": "The Montclarion, TripAdvisor, Google reviews",
+        "url": "https://themontclarion.org/feature/red-eye-cafe/",
+        "supporting": "Montclarion: 'looks like it belongs in the streets of Brooklyn with its retro interior and relaxed ambiance.' Google reviewer Enrique: 'a very relaxed, New York City punk vibe.'"
+      },
+      {
+        "claim": "Atmosphere outscores both food and service in structured ratings",
+        "source": "Restaurantji",
+        "url": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/",
+        "supporting": "Food 4.6 / Atmosphere 4.7 / Service 4.4 across 234 ratings."
+      },
+      {
+        "claim": "The cafe functions as a community and local-arts hub",
+        "source": "Google reviews (via menuweb.menu), Atly, Giftly",
+        "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+        "supporting": "'the cafe supports the local arts and local artists. If you go there enough, you see people of all types and ages from the local and even expanded community.' Atly: 'Walls display local art and shelves hold carefully selected books.'"
+      },
+      {
+        "claim": "Weekend crowding and long ticket times are the dominant complaint",
+        "source": "Google reviews (via menuweb.menu), My Local Nooks, NJ Monthly",
+        "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe",
+        "supporting": "'we waited just shy of an hour for a burger and eggs'; 'Took about 50 minutes for the food'; My Local Nooks: 'wait times stretching to 20-30 minutes during peak breakfast hours between 10am and noon'; NJ Monthly, 2012: 'expect to wait at peak breakfast hours.'"
+      },
+      {
+        "claim": "There is outdoor seating, including in the alley alongside the building",
+        "source": "Foodeist community Q&A, Restaurantji, MenuPix",
+        "url": "https://foodeist.com/place/red-eye-cafe",
+        "supporting": "Q: 'Are there places to eat outside now?' A: 'Yes. Out front and in the alley. The alley is shady.' MenuPix reviewer references 'inviting outdoor seating tucked away on a quiet alley.'"
+      },
+      {
+        "claim": "The location is intentionally off-center, next to the Walnut Street train station",
+        "source": "New York Times (2012), The Montclarion (2017)",
+        "url": "https://www.nytimes.com/2012/06/10/nyregion/the-red-eye-cafe-and-le-salbuen-offer-travelers-a-respite.html",
+        "supporting": "Brinton to NYT: 'This is a sleepy little area, but people want to get out of the center of town. They enjoy the quiet.' To The Montclarion: 'It's off the beaten path [with] certain farmers [around us that] we do business with, so it's convenient for that. [Also, it is right by] the train station.'"
+      }
+    ]
+  },
+
+  "press": [
+    {
+      "title": "Next Stop: Lattes or Gumbo",
+      "publication": "The New York Times",
+      "url": "https://www.nytimes.com/2012/06/10/nyregion/the-red-eye-cafe-and-le-salbuen-offer-travelers-a-respite.html",
+      "date": "2012-06-10",
+      "pullQuote": "\"This is a sleepy little area, but people want to get out of the center of town,\" Anthony Brinton said. \"They enjoy the quiet.\"",
+      "note": "Highest-authority press hit. Confirms: opened May 26, 2012; 34 seats, 1,800 sq ft; subway tiles and vintage lighting; Brinton was 38 and former manager of Cafe Eclectic; co-owned with twin brother Matthew; head chef George Perez. Full article body not fetched (paywall) - details are from the indexed excerpt."
+    },
+    {
+      "title": "Welcome to the Red Eye Cafe",
+      "publication": "Baristanet / Montclair Local",
+      "url": "https://montclairlocal.news/2012/06/welcome-to-the-red-eye-cafe/",
+      "date": "2012-06",
+      "pullQuote": "\"I want them to know it's the same sort of vibe where you can relax and not get the bum's rush or the hard sell,\" Brinton says.",
+      "note": "The definitive origin-story piece on the room's design. Also documents the overnight cold-brew process, the Venn-diagram coffee motif, and the naming: a 'Red Eye' is drip coffee with a shot of espresso, Brinton's own favorite drink."
+    },
+    {
+      "title": "Red Eye Cafe (Quick Bite review)",
+      "publication": "New Jersey Monthly",
+      "url": "https://njmonthly.com/articles/restaurant-reviews/red-eye-cafe/",
+      "date": "2012-03-04 (byline date; text describes the May 2012 opening)",
+      "author": "Deborah P. Carter",
+      "pullQuote": "Style: Intimate, industrial-chic cafe with blackboard walls, old-fashioned wood counter, vintage lighting and a hip vibe.",
+      "note": "Statewide-magazine review. 'Don't Miss' picks: Green eggs and ham, Double Happiness (Hong Kong waffle with house-made salted-caramel ice cream and candied bacon), pumpkin-buttermilk pancakes with honey whipped cream. Calls the Feel Better Brunch menu 'one of the cooler brunch menus around.'"
+    },
+    {
+      "title": "Coffee for Connoisseurs in Montclair",
+      "publication": "Baristanet / Montclair Local",
+      "url": "https://montclairlocal.news/2012/09/coffee-for-connoisseurs-in-montclair/",
+      "date": "2012-09",
+      "pullQuote": "Over the summer I became addicted to Red Eye's signature iced coffee drink called a New Orleans Sludge, which is a cold brewed French roast iced latte. The slow, cold method of brewing coffee brings out the natural sweetness of a dark roast without the bitterness.",
+      "note": "Names the roasters: Kobricks Cape Horn Blend and Intelligentsia Black Cat Espresso, Fair Trade. Also praises the Caramel Latte as 'not syrupy sweet like one may get at the coffee franchise found everywhere.'"
+    },
+    {
+      "title": "Red Eye Cafe",
+      "publication": "The Montclarion (Montclair State University)",
+      "url": "https://themontclarion.org/feature/red-eye-cafe/",
+      "date": "2017-11-01",
+      "author": "Luis Negron",
+      "pullQuote": "The Red Eye Cafe looks like it belongs in the streets of Brooklyn with its retro interior and relaxed ambiance.",
+      "note": "The only sit-down owner interview found. Contains Brinton's quotes about the salvaged chandelier and the off-the-beaten-path location, plus a first-hand review of the huevos rancheros and pumpkin pancakes."
+    },
+    {
+      "title": "The Best Brunch Spots in Montclair",
+      "publication": "Montclair Girl",
+      "url": "https://www.themontclairgirl.com/best-brunch-montclair-nj/",
+      "date": "undated (evergreen listicle)",
+      "pullQuote": "The menu is influenced by an eclectic mix of cuisines from around the world, made evident by the scotch egg banh mi sandwich, chilaquiles, and shrimp and grits. Don't forget to try the signature 'sludge' coffee made from cold-brewed espresso and cardamom."
+    },
+    {
+      "title": "A Guide to Montclair's Best Coffee Shops",
+      "publication": "Montclair Girl",
+      "url": "https://www.themontclairgirl.com/best-montclair-coffee-shops/",
+      "date": "undated (evergreen listicle)",
+      "pullQuote": "Located in the heart of Walnut Street, this Montclair staple brews organic, fair trade, and rainforest-alliance-certified Kobrick coffee and espresso."
+    },
+    {
+      "title": "Red Eye Cafe: Coffee and More",
+      "publication": "The Montclair Dispatch",
+      "url": "https://montclairdispatch.com/red-eye-cafe-coffee/",
+      "date": "undated",
+      "pullQuote": "Red Eye Cafe, located on Walnut Street near the train station, is a Montclair prize, being named as one of the best cafes in New Jersey, as well as the Critics Choice for brunch.",
+      "note": "The 'best cafes in New Jersey' and 'Critics Choice for brunch' awards are asserted here without attribution to an awarding body. I could not independently verify which publication issued them - do not repeat this claim as fact without further sourcing."
+    },
+    {
+      "title": "Local Ingredients & Timeless Charm | The Red Eye Cafe",
+      "publication": "Kristen Martinelli (independent food blog)",
+      "url": "https://www.kmartinelli.com/blog/red-eye-cafe-montclair-nj",
+      "date": "undated",
+      "pullQuote": "The Highlander was a different experience. I didn't think I was going to like the hard boiled egg fried in all of those flavors, but I did! The yolk was creamy, the veggies crunchy and vinegary. Red Eye's bread is to die for!",
+      "note": "Blog, not press. Useful for dish-level detail on the Highlander and the Frittata Sandwich."
+    },
+    {
+      "title": "Hipster Breakfast Spot",
+      "publication": "Garden State Grubber (independent food blog)",
+      "url": "http://gardenstategrubber.blogspot.com/2013/02/hipster-breakfast-spot.html",
+      "date": "2013-02",
+      "pullQuote": "The eggs were a little over done, but the red eye gravy was superb and worked well with the hearty elements of the dish. The parsnip was an unusual addition to a traditional hash that added a level of sweetness that was not overbearing.",
+      "note": "Blog, not press. Notable for an early critique of the no-hostess seating system: 'there were a couple of people who walked in, saw people waiting, and walked back out.'"
+    },
+    {
+      "title": "Sip the Signature New Orleans Sludge Coffee at This Montclair Fixture",
+      "publication": "My Local Nooks",
+      "url": "https://mylocalnooks.com/new-jersey/sip-the-signature-new-orleans-sludge-coffee-at-this-montclair-fixture/",
+      "date": "undated",
+      "pullQuote": "Despite being small, the cafe never feels cramped—just cozy. The vintage lighting casts a welcoming glow, and blackboard walls add character without overwhelming the space.",
+      "note": "Content-marketing style local guide rather than reported journalism; treat as lower-authority. Some details (9am weekend open, 7am weekday open) contradict the current 8am-3pm daily hours, so parts of it are stale."
+    }
+  ],
+
+  "sources": [
+    { "label": "Red Eye Cafe official site", "url": "https://www.redeyenj.com/" },
+    { "label": "Yelp business page (BLOCKED - accessed only via syndication)", "url": "https://www.yelp.com/biz/red-eye-cafe-montclair" },
+    { "label": "MapQuest (Yelp-syndicated rating + review excerpts)", "url": "https://www.mapquest.com/us/new-jersey/red-eye-cafe-277767025" },
+    { "label": "Giftly (Yelp Fusion API rating + review excerpts)", "url": "https://www.giftly.com/gift-card/red-eye-cafe-montclair" },
+    { "label": "Stormrage local-SEO audit (Google Business Profile rating, review count, menu items, Google keyword extraction)", "url": "https://stormrage.nyc/local-seo-audit/red-eye-cafe-493419/" },
+    { "label": "RestaurantGuru (Google rating + Google review text)", "url": "https://restaurantguru.com/Red-Eye-Cafe-Newark" },
+    { "label": "menuweb.menu (Google review text mirror)", "url": "https://menuweb.menu/restaurants/montclair/red-eye-cafe" },
+    { "label": "Foodeist (TripAdvisor + Yelp rating rollup, review text)", "url": "https://foodeist.com/place/red-eye-cafe" },
+    { "label": "Restaurantji (dimension sub-scores, customers' favorites)", "url": "https://www.restaurantji.com/nj/montclair/red-eye-cafe-/" },
+    { "label": "MenuPix reviews", "url": "https://www.menupix.com/restaurant-review/380195531/" },
+    { "label": "Atly (aggregated vibe tags and quotes)", "url": "https://www.atly.com/location/RedEyeCafe" },
+    { "label": "TripAdvisor review page (BLOCKED - excerpts via search index)", "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g46637-d4283861-r241157719-Red_Eye_Cafe-Montclair_New_Jersey.html" },
+    { "label": "Grubhub (menu + delivery reviews)", "url": "https://www.grubhub.com/restaurant/red-eye-cafe-94-walnut-st-montclair/2309255" },
+    { "label": "DoorDash (BLOCKED direct - excerpts via search index)", "url": "https://www.doordash.com/store/red-eye-cafe-montclair-113952/" },
+    { "label": "Seamless (current menu + prices)", "url": "https://www.seamless.com/menu/red-eye-cafe-94-walnut-st-montclair/2309255" },
+    { "label": "The New York Times - Next Stop: Lattes or Gumbo", "url": "https://www.nytimes.com/2012/06/10/nyregion/the-red-eye-cafe-and-le-salbuen-offer-travelers-a-respite.html" },
+    { "label": "Baristanet / Montclair Local - Welcome to the Red Eye Cafe", "url": "https://montclairlocal.news/2012/06/welcome-to-the-red-eye-cafe/" },
+    { "label": "Baristanet / Montclair Local - Coffee for Connoisseurs in Montclair", "url": "https://montclairlocal.news/2012/09/coffee-for-connoisseurs-in-montclair/" },
+    { "label": "Montclair Local restaurant directory listing", "url": "https://montclairlocal.news/feast/montclair-restaurants/red-eye-cafe/" },
+    { "label": "New Jersey Monthly - Red Eye Cafe Quick Bite", "url": "https://njmonthly.com/articles/restaurant-reviews/red-eye-cafe/" },
+    { "label": "The Montclarion - Red Eye Cafe (owner interview)", "url": "https://themontclarion.org/feature/red-eye-cafe/" },
+    { "label": "Montclair Girl - Best Brunch Spots in Montclair", "url": "https://www.themontclairgirl.com/best-brunch-montclair-nj/" },
+    { "label": "Montclair Girl - Best Montclair Coffee Shops", "url": "https://www.themontclairgirl.com/best-montclair-coffee-shops/" },
+    { "label": "The Montclair Dispatch - Red Eye Cafe: Coffee and More", "url": "https://montclairdispatch.com/red-eye-cafe-coffee/" },
+    { "label": "Kristen Martinelli blog - Local Ingredients & Timeless Charm", "url": "https://www.kmartinelli.com/blog/red-eye-cafe-montclair-nj" },
+    { "label": "Garden State Grubber blog - Hipster Breakfast Spot", "url": "http://gardenstategrubber.blogspot.com/2013/02/hipster-breakfast-spot.html" },
+    { "label": "My Local Nooks - Red Eye Cafe guide", "url": "https://mylocalnooks.com/new-jersey/sip-the-signature-new-orleans-sludge-coffee-at-this-montclair-fixture/" },
+    { "label": "Anthony Brinton LinkedIn (owner tenure: Feb 2012-present; Cafe Eclectic manager 1997-2012)", "url": "https://linkedin.com/in/anthony-brinton-9b9a9266" },
+    { "label": "Instagram @redeyecafe (BLOCKED - no readable content)", "url": "https://www.instagram.com/redeyecafe/" }
+  ]
+}
