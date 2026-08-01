@@ -4,83 +4,60 @@ import { heroRatings, photo } from '../data'
 import { Stars } from './ui'
 import Ticker from './Ticker'
 
-/* The real eye-chart sign in the cafe reads RED / EYE / CAFE / 94 WALNUT ST /
-   MONTCLAIR NJ / FOOD COFFEE COMFORT, each line smaller than the last. */
-const CHART = [
-  { text: 'RED', size: 'text-[16vw] md:text-[8rem]', gap: '', accent: true },
-  { text: 'EYE', size: 'text-[12.5vw] md:text-[6.25rem]', gap: 'mt-1' },
-  { text: 'CAFE', size: 'text-[7.5vw] md:text-[3.8rem]', gap: 'mt-2' },
-  { text: '94 WALNUT ST', size: 'text-[3.8vw] md:text-[1.5rem]', gap: 'mt-3' },
-  { text: 'MONTCLAIR NJ', size: 'text-[2.7vw] md:text-[1rem]', gap: 'mt-2.5' },
-  { text: 'FOOD · COFFEE · COMFORT', size: 'text-[1.9vw] md:text-[0.7rem]', gap: 'mt-2.5' },
-]
-
 export default function Hero() {
   const reduce = useReducedMotion()
   const { scrollY } = useScroll()
-  const imgY = useTransform(scrollY, [0, 700], [0, reduce ? 0 : 90])
+  const imgY = useTransform(scrollY, [0, 700], [0, reduce ? 0 : 50])
 
   return (
     <section id="top" className="noise relative isolate overflow-hidden pt-24 md:pt-28">
-      <div className="wrap grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
-        {/* ------------------------------ eye chart ------------------------------ */}
+      <div className="wrap grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+        {/* ------------------------------ copy ------------------------------ */}
         <div>
-          <motion.div
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-4 text-[0.68rem] font-500 uppercase tracking-[0.28em] text-brass"
+          >
+            Open daily · 8am – 3pm
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
+            className="font-display text-[3.25rem] leading-[0.92] tracking-[0.06em] text-cream sm:text-6xl md:text-7xl"
+          >
+            RED EYE
+            <br />
+            <span className="text-brick">CAFE</span>
+          </motion.h1>
+
+          <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-cream/15 bg-cream/[0.04] px-4 py-1.5 backdrop-blur"
+            transition={{ delay: 0.15, duration: 0.65 }}
+            className="mt-3 font-display text-lg tracking-[0.18em] text-cream/50 sm:text-xl"
           >
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sage opacity-70" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-sage" />
-            </span>
-            <span className="text-[0.68rem] font-500 uppercase tracking-[0.24em] text-cream/70">
-              Open daily 8am – 3pm
-            </span>
-          </motion.div>
-
-          <div className="border-y-2 border-cream/15 py-5 pl-1 pr-4 md:py-6">
-            {CHART.map((line, i) => (
-              <motion.div
-                key={line.text}
-                initial={{ opacity: 0, y: 26, filter: 'blur(8px)' }}
-                animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                transition={{ duration: 0.85, delay: 0.12 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
-                className={`flex items-baseline gap-4 ${line.gap}`}
-              >
-                <span
-                  aria-hidden
-                  className="hidden w-5 shrink-0 select-none font-sans text-[0.6rem] tracking-widest text-cream/20 sm:block"
-                >
-                  {i + 1}
-                </span>
-                <span
-                  className={`font-display leading-[0.86] tracking-[0.06em] ${line.size} ${
-                    line.accent ? 'text-brick' : 'text-cream'
-                  }`}
-                >
-                  {line.text}
-                </span>
-              </motion.div>
-            ))}
-          </div>
+            94 WALNUT ST · MONTCLAIR NJ
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.85, duration: 0.8 }}
-            className="mt-5 max-w-md text-balance text-[0.94rem] leading-relaxed text-cream/65"
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="mt-5 max-w-md text-[0.94rem] leading-relaxed text-cream/65"
           >
             Slinging great food and drinks on Walnut Street since 2012. Often imitated, never
-            duplicated. Quality stuff at a good price, without all the fluff.
+            duplicated.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 14 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.95, duration: 0.7 }}
-            className="mt-6 flex flex-wrap items-center gap-3"
+            transition={{ delay: 0.45, duration: 0.65 }}
+            className="mt-7 flex flex-wrap items-center gap-3"
           >
             <Link
               to="/menu"
@@ -107,32 +84,30 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* -------------------------------- photo -------------------------------- */}
+        {/* ------------------------------ photo ------------------------------ */}
         <motion.div
           style={{ y: imgY }}
-          initial={{ opacity: 0, scale: 1.04 }}
+          initial={{ opacity: 0, scale: 1.02 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-          className="relative"
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none"
         >
-          <div className="relative overflow-hidden rounded-[1.25rem] border border-cream/10 shadow-2xl shadow-black/50">
+          <div className="relative overflow-hidden rounded-[1.25rem] border border-cream/10 shadow-2xl shadow-cream/10">
             <img
               src={photo('eyechart-hero').localPath}
               alt="The Red Eye Cafe eye-chart card beside an iced drink, in front of the cafe's tiled RED EYE CAFE sign"
               className="aspect-[4/3] w-full object-cover"
-              width={1000}
-              height={750}
-              // React 18 forwards this only in lowercase form.
+              width={720}
+              height={540}
               {...{ fetchpriority: 'high' }}
             />
           </div>
 
-          {/* floating credential card */}
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="absolute -bottom-9 -left-3 w-[16.5rem] rounded-2xl border border-cream/12 bg-soot/95 p-4 shadow-2xl shadow-black/50 backdrop-blur-xl sm:-left-7 sm:w-[17.5rem]"
+            transition={{ delay: 0.55, duration: 0.75 }}
+            className="absolute -bottom-7 -left-3 w-[15.5rem] rounded-2xl border border-cream/12 bg-soot/95 p-4 shadow-2xl shadow-cream/10 backdrop-blur-xl sm:-left-6"
           >
             <p className="text-[0.6rem] font-500 uppercase tracking-[0.22em] text-brass">
               Montclair
@@ -144,16 +119,12 @@ export default function Hero() {
             <p className="mt-2 text-[0.85rem] font-500 leading-snug text-cream/70">
               <span className="text-cream">672</span> Google reviews
             </p>
-            <p className="mt-1 text-[0.9rem] font-500 leading-snug text-cream/70">
-              <span className="font-display text-2xl leading-none text-brass">#6</span>
-              <span className="ml-1.5">of 235 in Montclair</span>
-            </p>
           </motion.div>
         </motion.div>
       </div>
 
       {/* ------------------------------- rating rail ------------------------------ */}
-      <div className="wrap mt-16 md:mt-14">
+      <div className="wrap relative mt-16 md:mt-20">
         <div className="rule" />
         <div className="grid grid-cols-2 gap-x-6 gap-y-7 py-7 sm:grid-cols-4">
           {heroRatings.map((r, i) => (
@@ -164,7 +135,7 @@ export default function Hero() {
               rel="noreferrer noopener"
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 + i * 0.08, duration: 0.6 }}
+              transition={{ delay: 0.8 + i * 0.08, duration: 0.6 }}
               className="group"
             >
               <div className="flex items-baseline gap-1.5">
@@ -176,15 +147,13 @@ export default function Hero() {
               <p className="mt-1.5 text-[0.7rem] font-500 uppercase tracking-[0.18em] text-cream/50">
                 {r.platform}
               </p>
-              <p className="text-[0.7rem] text-cream/35">
-                {r.count?.toLocaleString()} reviews
-              </p>
+              <p className="text-[0.7rem] text-cream/35">{r.count?.toLocaleString()} reviews</p>
             </motion.a>
           ))}
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.24, duration: 0.6 }}
+            transition={{ delay: 1.04, duration: 0.6 }}
           >
             <div className="font-display text-3xl leading-none text-brass">#1</div>
             <p className="mt-1.5 text-[0.7rem] font-500 uppercase tracking-[0.18em] text-cream/50">
